@@ -1,0 +1,16 @@
+$primary-color: #1F9BD7;
+$secondary-color: #FFFFFF;
+$accent1-color: #093C7D;
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-Bold-Alt1.otf");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+$primary-font: 'Comfortaa';
+$secondary-font: 'OpenSans';

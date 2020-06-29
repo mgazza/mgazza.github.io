@@ -1,0 +1,104 @@
+body {
+  overflow-x: hidden;
+  font-family: $secondary-font;
+  color: $primary-color;
+  position: relative;
+}
+a {
+  color: $primary-color;
+}
+a:hover {
+  color: $accent1-color;
+}
+
+h3 {
+  font: $primary-font;
+  color: $accent1-color;
+}
+
+h4 {
+  color: $accent1-color;
+}
+
+.profile-img {
+  margin-bottom: 30px;
+}
+
+.skill-row {
+  margin-bottom: 30px;
+}
+
+.skill {
+  text-align: center;
+  display: inline-block;
+}
+
+.skill img {
+  width:90px;
+  max-height:90px;
+  margin: 5px;
+}
+
+.grecaptcha-badge {
+  display: none;
+}
+
+h3 {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: $accent1-color solid 2px;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.carousel-indicators li{
+  background-color: $primary-color;
+}
+
+.carousel-indicators li.active{
+  background-color: $accent1-color;
+}
+
+.carousel-item .row{
+  margin-bottom: 50px;
+}
+
+ul.social {
+  padding-inline-start: 0;
+}
+
+ul.social li {
+  display: inline-block;
+  padding-left: 0.75rem;
+  list-style: none;
+}
+
+.fa {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  color: $primary-color;
+}
+.btn-primary {
+  background-color: $primary-color;
+}
+.btn-primary:hover{
+  background-color: $accent1-color;
+}
+
+@media print
+{
+  .no-print, .no-print *
+  {
+    display: none !important;
+  }
+}
+
+#message {
+  min-height: 145px;
+}

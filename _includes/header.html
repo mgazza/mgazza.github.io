@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 text-center text-md-left">
+            <h1>Mark Gascoyne</h1>
+            <h5>Polyglot Software Engineer</h5>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-center text-md-right">
+            <ul class="social no-print">
+                {% for item in site.social %}
+                <li><a href="{{ item.href }}" class="fa {{ item.class }}"></a></li>
+                {% endfor %}
+            </ul>
+            <button type="button" href="#contact" class="btn btn-primary no-print mb-3">Contact</button>
+            <p>web: <a href="https://markgascoyne.co.uk">https://markgascoyne.co.uk</a></p>
+        </div>
+    </div>
+</div>

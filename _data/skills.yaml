@@ -1,0 +1,201 @@
+kubernetes:
+  title: Kubernetes
+  img: kubernetes.png
+  href: https://kubernetes.io/
+  cat: orchestration
+golang:
+  title: Golang
+  img: golang.svg
+  href: https://golang.org/
+  cat: languages
+helm:
+  title: Helm
+  img: helm.svg
+  href: https://helm.sh/
+  cat: orchestration
+flux:
+  title: Flux
+  img: flux.png
+  href: https://www.weave.works/oss/flux/
+  cat: orchestration
+skaffold:
+  title: Skaffold
+  img: skaffold.jpg
+  href: https://skaffold.dev/
+  cat: orchestration
+kustomize:
+  title: Kustomize
+  img: kustomize.png
+  href: https://kustomize.io/
+  cat: orchestration
+github:
+  title: GitHub
+  img: github.png
+  href: https://github.com/
+  cat: management
+git:
+  title: Git
+  img: git.png
+  href: https://git-scm.com/
+  cat: tools
+circle-ci:
+  title: Circle CI
+  img: circle-ci.png
+  href: https://www.circleci.com/
+  cat: development
+vuejs:
+  title: Vue js
+  img: vuejs.png
+  href: https://vuejs.org/
+  cat: ux
+swagger:
+  title: Swagger
+  img: swagger.png
+  href: https://swagger.io/
+  cat: web
+rest:
+  title: Rest
+  img: rest.png
+  href: https://restfulapi.net/
+  cat: web
+dotnet:
+  title: .Net
+  img: dotnet.png
+  href: https://dotnet.microsoft.com/
+  cat: technologies
+sql-server:
+  title: Sql Server
+  img: sql-server.svg
+  href: https://www.microsoft.com/en-in/sql-server/sql-server-2019
+  cat: databases
+csharp:
+  title: CSharp
+  img: csharp.png
+  href: https://docs.microsoft.com/en-us/dotnet/csharp/
+  cat: languages
+vbdotnet:
+  title: VB.Net
+  img: vbdotnet.jpg
+  href: https://docs.microsoft.com/en-us/dotnet/visual-basic/
+  cat: languages
+z-wave:
+  title: Z Wave
+  img: zwave.png
+  href: https://www.z-wave.com/
+  cat: protocols
+google-cloud:
+  title: Google Cloud
+  img: google-cloud.png
+  href: https://cloud.google.com/
+  cat: cloud-platforms
+docker:
+  title: Docker
+  img: docker.png
+  href: https://www.docker.com/
+  cat: orchestration-technologies
+linux:
+  title: Linux
+  img: linux.png
+  href: https://www.linux.org/
+  cat: opperating-systems
+cassandra:
+  title: Cassandra
+  img: cassandra.png
+  href: https://cassandra.apache.org/
+  cat: databases
+entity-framework:
+  title: Entity Framework
+  img: entityframework.png
+  href: https://docs.microsoft.com/en-us/ef/
+  cat: database-frameworks
+modbus:
+  title: Modbus
+  img: modbus.png
+  href: http://www.modbus.org/
+  cat: protocols
+scala:
+  title: Scala
+  img: scala.png
+  href: https://www.scala-lang.org/
+  cat: languages
+nodejs:
+  title: Node js
+  img: nodejs.svg
+  href: https://nodejs.org/
+  cat: languages
+tfs:
+  title: TFS
+  img: tfs.jpg
+  href: https://azure.microsoft.com/en-gb/services/devops/server/
+  cat: management
+signalR:
+  title: Signalr
+  img: signalr.svg
+  href: https://dotnet.microsoft.com/apps/aspnet/signalr
+  cat: ux
+redis:
+  title: Redis
+  img: redis.png
+  href: https://redis.io/
+  cat: databases
+azure:
+  title: Azure
+  img: azure.svg
+  href: https://azure.microsoft.com/en-gb/
+  cat: cloud-platforms
+aws:
+  title: AWS
+  img: aws.png
+  href: https://aws.amazon.com
+  cat: cloud-platforms
+mvc:
+  title: MVC
+  img: mvc.jpg
+  href: https://dotnet.microsoft.com/apps/aspnet/mvc
+  cat: frameworks
+java:
+  title: Java
+  img: java.svg
+  href: https://www.java.com/
+  cat: languages
+spring:
+  title: Spring
+  img: spring.svg
+  href: https://spring.io/
+  cat: frameworks
+jquery:
+  title: JQuery
+  img: jquery.svg
+  href: https://jquery.com/
+  cat: ux
+knockout:
+  title: Knockout
+  img: knockout.png
+  href: https://knockoutjs.com/
+  cat: ux
+backbone:
+  title: Backbone js
+  img: backbone.png
+  href: https://backbonejs.org/
+  cat: ux
+highcharts:
+  title: Highcharts
+  img: highcharts.svg
+  href: https://highcharts.com/
+  cat: ux
+ssas:
+  title: Microsoft SSAS
+  img: ssas.png
+  href: https://docs.microsoft.com/en-us/analysis-services/
+  cat: databases
+soap:
+  title: Soap
+  img: soap.png
+  href: https://en.wikipedia.org/wiki/SOAP
+  cat: web
+ssis:
+  title: SQL Server Integration Services
+  img: ssis.jpg
+  href: https://docs.microsoft.com/en-us/sql/integration-services/
+  cat: databases
+

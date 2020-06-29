@@ -1,0 +1,15 @@
+url: https://markgascoyne.co.uk
+baseurl: ""
+title: Mark Gascoyne Resume
+
+social:
+  - title: GitHub
+    href: https://github.com/mgazza
+    class: fa-github
+  - title: LinkedIn
+    href: https://www.linkedin.com/in/markgascoyne
+    class: fa-linkedin
+
+recaptureKey: 6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy
+
+google_analytics: UA-168224295-2

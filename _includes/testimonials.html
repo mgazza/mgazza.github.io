@@ -1,0 +1,42 @@
+<div id="testimonials" class="container no-print text-center text-sm-left">
+    <h3 class="text-center">Testimonials</h3>
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+        <div class="container">
+        <ol class="carousel-indicators">
+            {% for item in site.data.testimonials %}
+            <li data-target="#testimonial-carousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first == true %} active{% endif %}"></li>
+            {% endfor %}
+        </ol>
+        <div class="carousel-inner">
+            {% for item in site.data.testimonials %}
+            <div class="carousel-item{% if forloop.first == true %} active{% endif %}">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        {% if item.img %}
+                        <p>
+                            <a href="{{ item.link }}"><img src="{{ "/assets/images/testimonials/" | prepend: site.baseurl | append: item.img }}"></a>
+                        </p>
+                        <p>{{ item.by }}</p>
+                        {% else %}
+                        <p><a href="{{ item.link }}">{{ item.by }}</a></p>
+                        {% endif %}
+                        <p class="text-muted font-italic">{{ item.date }}</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-9">
+                        {{ item.body | markdownify }}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+</div>
