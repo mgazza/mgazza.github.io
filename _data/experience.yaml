@@ -9,8 +9,8 @@
     Projects I have undertaken include:
     * Undertake the companies first leap into Kubernetes.
     * Working with all teams to introduce agile way of working.
-    * Work with the eu development team in an agile methodology to produce the single sign-on solution hosted in kubernetes and written in golang.
-    * Work with the us/eu teams to develop and deliver the PCI encryption micro service hosted in kubernetes and written in golang.
+    * Work with the EU development team in an agile methodology to produce the single sign-on solution hosted in kubernetes and written in golang.
+    * Work with the US/EU teams to develop and deliver the PCI encryption micro service hosted in kubernetes and written in golang.
     * Work with development and infrastructure teams to introduce Git-Ops using Weaveworks and various other Kubernetes tech (cert-manager, external-dns, sealed-secrets).
     * Producing a Horizontal Pod Autoscaler for Kubernetes which uses pod readiness rather than metrics for scaling.
     * Produced client facing website for booking rentals.
@@ -93,7 +93,7 @@
     - vbdotnet
     - ssis
 - company: CSE Healthcare Systems
-  title: Student Softwre Engineer
+  title: Student Software Engineer
   date: Jun 2008 - Sep 2009
   body: |
     Key Responsibilities:
