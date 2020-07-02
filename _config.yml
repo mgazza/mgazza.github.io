@@ -9,6 +9,9 @@ social:
   - title: LinkedIn
     href: https://www.linkedin.com/in/markgascoyne
     class: fa-linkedin
+  - title: Stack Overflow
+    href: https://stackoverflow.com/users/245052/mark
+    class: fa-stack-overflow
 
 recaptureKey: 6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy
 
