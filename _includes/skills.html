@@ -5,7 +5,8 @@
         {% for skillhash in site.data.skills %}
         {% assign item = skillhash[1] %}
             <a href="{{ item.href }}" title="{{ item.title }}" class="skill">
-                <img alt="{{ item.title }}" src="{{ "/assets/images/skills/" | prepend: site.baseurl | append: item.img }}"/>
+                <img class="no-print" alt="{{ item.title }}" src="{{ "/assets/images/skills/" | prepend: site.baseurl | append: item.img }}"/>
+                <span class="print">{{ item.title }}</span>
             </a>
         {% endfor %}
         </div>

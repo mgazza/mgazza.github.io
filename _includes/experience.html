@@ -21,7 +21,8 @@
                 {% assign skill = site.data.skills[skillhash] %}
                 {% if skill.title %}
                 <a href="{{ skill.href }}" title="{{ skill.title }}" class="skill">
-                    <img alt="{{ skill.title }}" src="{{ "/assets/images/skills/" | prepend: site.baseurl | append: skill.img }}"/>
+                    <img class="no-print" alt="{{ skill.title }}" src="{{ "/assets/images/skills/" | prepend: site.baseurl | append: skill.img }}"/>
+                    <span class="print">{{ skill.title }}</span>
                 </a>
                 {% else %}
                 {{skillhash}}
