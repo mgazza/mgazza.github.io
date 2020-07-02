@@ -1,14 +1,14 @@
 <div id="header" class="container">
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-7 text-center text-md-left">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 text-center text-md-left">
             <h1>Mark Gascoyne</h1>
             <h5>Polyglot Software Engineer</h5>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 text-center text-md-right">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-center text-md-right">
             <ul class="social no-list">
                 {% for item in site.social %}
                 <li>
-                    <span class="print">{{ item.title}}:</span>
+                    <span class="print">{{ item.title}}:&nbsp;</span>
                     <a href="{{ item.href }}">
                         <i class="fa {{ item.class }} no-print"></i>
                         <span class="print">{{ item.href }}</span>
@@ -18,10 +18,16 @@
             </ul>
             <ul class="no-list">
                 <li>
-                    <span>Web: </span><a href="https://www.markgascoyne.co.uk">https://www.markgascoyne.co.uk</a>
+                    <span>Web:&nbsp;</span><a href="https://www.markgascoyne.co.uk">https://www.markgascoyne.co.uk</a>
                 </li>
                 <li>
                     <a href="#contact" class="btn btn-primary no-print mt-3 page-scroll">Contact</a>
+                </li>
+                <li class="print">
+                    <span>Email:&nbsp;</span><span>contact@</span><span>markgascoyne.co.uk</span>
+                </li>
+                <li class="print">
+                    <span>Phone:&nbsp;</span><span>07951</span>&nbsp;<span>553010</span>
                 </li>
             </ul>
 

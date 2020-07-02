@@ -125,8 +125,13 @@ ul.social li {
   {
     display: none !important;
   }
-  .print, .print * {
-    display: inherit !important;
+
+  li.print{
+    display: list-item !important;
+  }
+
+  span.print{
+    display: inline-block !important;
   }
 }
 
