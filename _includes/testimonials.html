@@ -22,21 +22,17 @@
                         {% endif %}
                         <p class="text-muted font-italic">{{ item.date }}</p>
                     </div>
-                    <div class="col-xs-12 col-sm-8 col-md-9">
-                        {{ item.body | markdownify }}
+                    {% assign id = 'testimonial-' | append: forloop.index %}
+                    <div class="col-xs-12 col-sm-8 col-md-9 testimonial">
+                        <div id="{{ id }}" class="collapse body" aria-expanded="false">
+                            {{ item.body | markdownify }}
+                        </div>
+                        <a role="button" class="collapsed" data-toggle="collapse" href="#{{ id }}" aria-expanded="false" aria-controls="{{ id }}"></a>
                     </div>
                 </div>
             </div>
             {% endfor %}
         </div>
     </div>
-    <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
     </div>
 </div>

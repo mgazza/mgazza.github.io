@@ -102,3 +102,23 @@ ul.social li {
 #message {
   min-height: 145px;
 }
+
+.carousel-inner div.collapse:not(.show) {
+  height: 6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.carousel-inner div.collapsing {
+  height: 6em;
+}
+
+
+.testimonial a.collapsed:after  {
+  content: '+ Show More';
+}
+
+.testimonial  a:not(.collapsed):after {
+  content: '- Show Less';
+}
