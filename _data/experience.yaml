@@ -1,3 +1,19 @@
+- company: Ve Global
+  title: Software Consultant
+  date: July 2020 - Present
+  body: |
+    Projects:
+    * Restructuring of Ve's infrastructure and techology to save costs and create a more managable environment.
+    * Introduce and setup local development using kustomise/skaffold/minikube.
+  skills:
+    - azure
+    - kubernetes
+    - skaffold
+    - kustomize
+    - vuejs
+    - kafka
+    - confluent-cloud
+    - docker
 - company: Thermeon Worldwide
   title: Software Engineer
   date: Jan 2018 - Jul 2020
