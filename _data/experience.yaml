@@ -3,8 +3,10 @@
   date: Jul 2020 - Present
   body: |
     Projects:
-    * Restructuring of Ve's infrastructure and techology to save costs and create a more managable environment.
+    * Restructuring of Ve's infrastructure and technology to save costs and create a more manageable environment.
     * Introduce and setup local development using kustomise/skaffold/minikube.
+    * Rollout of GitOps to improve deployment pipelines.
+    * Training developers to develop best in class microservices.
   skills:
     - azure
     - kubernetes
@@ -13,7 +15,9 @@
     - vuejs
     - kafka
     - confluent-cloud
+    - golang
     - docker
+    - flux
 - company: Thermeon Worldwide
   title: Software Engineer
   date: Jan 2018 - Jul 2020
