@@ -10,7 +10,7 @@
     * Developing the supporting services
   skills:
     - aws
-    - postgres
+    - postgresql
     - golang
     - skaffold
     - kustomize

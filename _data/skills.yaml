@@ -198,4 +198,38 @@ ssis:
   img: ssis.jpg
   href: https://docs.microsoft.com/en-us/sql/integration-services/
   cat: databases
-
+kafka:
+  title: Apache Kafka
+  img: kafka.svg
+  href: https://kafka.apache.org/
+  cat: messaging
+confluence:
+  title: Confluence
+  img: confluence.svg
+  href: https://confluence.atlassian.com/
+  cat: management
+jira:
+  title: Jira
+  img: jira.svg
+  href: https://www.atlassian.com/software/jira
+  cat: management
+bitbucket:
+  title: BitBucket
+  img: bitbucket.svg
+  href: https://bitbucket.org/
+  cat: management
+postgresql:
+  title: PostgreSQL
+  img: postgresql.svg
+  href: https://www.postgresql.org/
+  cat: databases
+react:
+  title: React
+  img: react.svg
+  href: https://reactjs.org/
+  cat:
+terrafrom:
+  title: Terrafrom
+  img: terrafrom.svg
+  href: https://www.terraform.io/
+  cat: orchestration
