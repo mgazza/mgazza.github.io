@@ -1,6 +1,31 @@
+- company: Kultralab
+  title: Senior Software Engineer (Contract)
+  date: Jun 2021 - present
+  body: |
+    Kultralab are developing an app to revolutionise the workplace.
+    Responsabilities:
+    * Delivery of infrastructure as code and declaritive infrastructure maintained using gitops.
+    * Delivery of ci-cd pipelines.
+    * Refining the backlog, gathering requirements.
+    * Developing the supporting services
+  skills:
+    - aws
+    - postgres
+    - golang
+    - skaffold
+    - kustomize
+    - flux
+    - kubernetes
+    - terraform
+    - k3d
+    - react
+    - docker
+    - bitbucket
+    - jira
+    - confluence
 - company: Ve Global
   title: Software Consultant
-  date: Jul 2020 - Present
+  date: Jul 2020 - Jun 2021
   body: |
     Projects:
     * Restructuring of Ve's infrastructure and technology to save costs and create a more manageable environment.
