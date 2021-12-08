@@ -228,8 +228,8 @@ react:
   img: react.svg
   href: https://reactjs.org/
   cat:
-terrafrom:
-  title: Terrafrom
-  img: terrafrom.svg
+terraform:
+  title: Terraform
+  img: terraform.svg
   href: https://www.terraform.io/
   cat: orchestration
