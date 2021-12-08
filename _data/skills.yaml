@@ -243,3 +243,8 @@ confluent-cloud:
   img: confluent-cloud.png
   href: https://www.confluent.io/
   cat: cloud-platforms
+graphql:
+  title: GraphQl
+  img: graphql.svg
+  href: https://graphql.org/
+  cat: web

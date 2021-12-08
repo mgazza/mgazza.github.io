@@ -19,6 +19,7 @@
     - terraform
     - k3s
     - react
+    - graphql
     - docker
     - bitbucket
     - jira
