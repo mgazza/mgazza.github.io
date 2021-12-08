@@ -17,7 +17,7 @@
     - flux
     - kubernetes
     - terraform
-    - k3d
+    - k3s
     - react
     - docker
     - bitbucket

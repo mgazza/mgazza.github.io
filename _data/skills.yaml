@@ -233,3 +233,8 @@ terraform:
   img: terraform.svg
   href: https://www.terraform.io/
   cat: orchestration
+k3s:
+  title: K3S
+  img: k3s.svg
+  href: https://k3s.io/
+  cat: orchestration
