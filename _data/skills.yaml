@@ -145,7 +145,7 @@ azure:
   cat: cloud-platforms
 aws:
   title: AWS
-  img: aws.png
+  img: aws.svg
   href: https://aws.amazon.com
   cat: cloud-platforms
 mvc:
