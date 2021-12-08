@@ -238,3 +238,8 @@ k3s:
   img: k3s.svg
   href: https://k3s.io/
   cat: orchestration
+confluent-cloud:
+  title: Confluent Cloud
+  img: confluent-cloud.png
+  href: https://www.confluent.io/
+  cat: cloud-platforms
