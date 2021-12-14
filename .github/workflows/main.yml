@@ -20,9 +20,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: touch file
-        run: |
-          touch cv.pdf
       # Setup git
       - name: setup git config
         run: |
@@ -46,7 +43,7 @@ jobs:
       # Commit the generated pdf
       - name: Commit
         run: |
-          ls -la
+          sudo chown runner:docker cv.pdf
           stat cv.pdf
           # Stage the file, commit and push
           git add cv.pdf
