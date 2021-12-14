@@ -43,6 +43,8 @@ jobs:
       # Commit the generated pdf
       - name: Commit
         run: |
+          ls -la
+          stat cv.pdf
           # Stage the file, commit and push
           git add cv.pdf
           git commit -m "generated new pdf"
