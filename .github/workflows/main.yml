@@ -47,6 +47,10 @@ jobs:
           git add cv.pdf
           git commit -m "generated new pdf"
           git push origin master
+      - uses: actions/upload-artifact@v2
+        with:
+          name: cv
+          path: cv.pdf
     # Service container to host the generated site
     services:
       nginx:
