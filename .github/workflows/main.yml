@@ -20,6 +20,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - name: clean
+        run: rm cv.pdf
       - name: Run Jeykll
         run: docker-compose -f "docker-compose.yml" up -d --build
       # Setup git
@@ -31,8 +33,6 @@ jobs:
       # Generate the pdf using chrome
       - name: Generate the pdf
         run: |
-          rm cv.pdf
-          stat cv.pdf
           docker run \
           -v ${{ github.workspace }}:/usr/src/app \
           zenika/alpine-chrome --no-sandbox --print-to-pdf-no-header --print-to-pdf=cv.pdf --hide-scrollbars \
