@@ -52,8 +52,7 @@ jobs:
       nginx:
         image: nginx
         options: |
-          --volume ${{ github.workspace }}:/usr/share/nginx/html 
-          --name nginx
+          --volume ${{ github.workspace }}:/usr/share/nginx/html
         ports:
         - 80:80
         
