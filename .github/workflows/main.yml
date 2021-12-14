@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run Jeykll
         run: |
-          docker create --name jekyll --network-alias jekyll -p 4000:4000 -v "${{ github.workspace }}:/srv/jekyll" jekyll/jekyll:4.0.1 bash -c "bundle install && bundle exec jekyll serve"
+          docker run --name jekyll --network-alias jekyll -p 4000:4000 -v "${{ github.workspace }}:/srv/jekyll" jekyll/jekyll:4.0.1 bash -c "bundle install && bundle exec jekyll serve"
       # Setup git
       - name: Setup git config
         run: |
