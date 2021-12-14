@@ -6,13 +6,11 @@ services:
       - bash -c "chmod 777 /srv/jekyll && bundle install && bundle exec jekyll serve --host 0.0.0.0"
     hostname: jekyll
     container_name: build_jekyll
+    ports:
+      - "4000:4000"
     expose:
       - 4000
-    networks:
-      - jekyll
     volumes:
       - type: bind
         source: .
         target: /srv/jekyll
-networks:
-  jekyll:
