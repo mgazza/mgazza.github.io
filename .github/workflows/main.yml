@@ -20,8 +20,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: clean
-        run: rm cv.pdf
       - name: Run Jeykll
         run: docker-compose -f "docker-compose.yml" up -d --build
       # Setup git
