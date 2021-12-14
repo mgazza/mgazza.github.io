@@ -26,19 +26,6 @@ jobs:
           # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-      # Runs jekyll build
-      - name: Build Jekyll site
-        run: |
-          mkdir _site
-          sudo chown -R runneradmin:runneradmin _site
-          docker run \
-            -v ${{ github.workspace }}:/srv/jekyll \
-            jekyll/builder:4.0.1 \
-            /bin/bash -c 'chmod 777 /srv/jekyll && bundle install && bundle exec jekyll build'
-      - name: Restart nginx
-        uses: docker://docker
-        with:
-          args: docker restart nginx
       # Generate the pdf using chrome
       - name: Generate the pdf
         run: |
@@ -46,7 +33,7 @@ jobs:
           docker run \
           -v ${{ github.workspace }}:/usr/src/app \
           zenika/alpine-chrome --no-sandbox --print-to-pdf-no-header --print-to-pdf=cv.pdf --hide-scrollbars \
-          http://nginx/index.html
+          http://jeykll:4000/
       # Commit the generated pdf
       - name: Commit
         run: |
@@ -61,12 +48,13 @@ jobs:
           path: cv.pdf
     # Service container to host the generated site
     services:
-      nginx:
-        image: nginx
+      jeykll:
+        image: jekyll/jekyll:4.0.1 
         options: |
-          --volume ${{ github.workspace }}/_site:/usr/share/nginx/html
+          -v ${{ github.workspace }}:/srv/jekyll
+          bundle install && bundle exec jekyll serve
         ports:
-        - 80:80
+        - 4000:4000
         
         
     
