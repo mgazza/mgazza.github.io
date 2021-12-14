@@ -39,7 +39,7 @@ jobs:
           docker run \
           -v ${{ github.workspace }}:/usr/src/app \
           zenika/alpine-chrome --no-sandbox --print-to-pdf=cv.pdf --hide-scrollbars \
-          http://nginx/
+          http://nginx/_site/
       # Commit the generated pdf
       - name: Commit
         run: |
@@ -52,7 +52,7 @@ jobs:
       nginx:
         image: nginx
         options: |
-          --volume ${{ github.workspace }}/_site:/usr/share/nginx/html 
+          --volume ${{ github.workspace }}:/usr/share/nginx/html 
           --name nginx
         ports:
         - 80:80
