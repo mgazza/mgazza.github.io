@@ -38,8 +38,8 @@ jobs:
         run: |
           docker run \
           -v ${{ github.workspace }}:/usr/src/app \
-          zenika/alpine-chrome --no-sandbox --print-to-pdf=cv.pdf --hide-scrollbars \
-          http://nginx/_site/
+          zenika/alpine-chrome --no-sandbox --print-to-pdf-no-header --print-to-pdf=cv.pdf --hide-scrollbars \
+          http://nginx/_site/index.html
       # Commit the generated pdf
       - name: Commit
         run: |
