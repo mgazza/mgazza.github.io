@@ -31,6 +31,7 @@ jobs:
       # Generate the pdf using chrome
       - name: Generate the pdf
         run: |
+          sudo chown runneradmin:runneradmin cv.pdf
           docker run \
           -v ${{ github.workspace }}:/usr/src/app \
           zenika/alpine-chrome --no-sandbox --print-to-pdf-no-header --print-to-pdf=cv.pdf --hide-scrollbars \
