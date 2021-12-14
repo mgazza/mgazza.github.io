@@ -30,6 +30,7 @@ jobs:
       - name: Build Jekyll site
         run: |
           mkdir _site
+          sudo chown -R runneradmin:runneradmin _site
           docker run \
             -v ${{ github.workspace }}:/srv/jekyll \
             jekyll/builder:4.0.1 \
