@@ -50,9 +50,7 @@ jobs:
     services:
       jeykll:
         image: jekyll/jekyll:4.0.1 
-        options: |
-          -v ${{ github.workspace }}:/srv/jekyll
-          bundle install && bundle exec jekyll serve
+        options: -v ${{ github.workspace }}:/srv/jekyll bundle install && bundle exec jekyll serve
         ports:
         - 4000:4000
         
