@@ -3,7 +3,7 @@ services:
   jekyll:
     image: jekyll/jekyll:4.0.1
     command:
-      - bash -c "chmod 777 /srv/jekyll && bundle install && bundle exec jekyll serve"
+      - bash -c "chmod 777 /srv/jekyll && bundle install && bundle exec jekyll serve --host 0.0.0.0"
     hostname: jekyll
     container_name: build_jekyll
     expose:
