@@ -32,7 +32,7 @@ jobs:
       # Generate the pdf using chrome
       - name: Generate the pdf
         run: |
-          curl http://jekyll:4000/
+          curl http://127.0.0.1:4000/
           rm cv.pdf
           docker run \
           -v ${{ github.workspace }}:/usr/src/app \
