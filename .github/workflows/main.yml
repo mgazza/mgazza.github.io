@@ -32,7 +32,7 @@ jobs:
           docker run \
             -v ${{ github.workspace }}:/srv/jekyll \
             jekyll/builder:4.0.1 \
-            /bin/bash -c 'bundle install && bundle exec jekyll build'
+            /bin/bash -c 'chmod 777 /srv/jekyll && bundle install && bundle exec jekyll build'
       # Generate the pdf using chrome
       - name: Generate the pdf
         run: |
