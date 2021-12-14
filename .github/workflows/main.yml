@@ -20,6 +20,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - name: touch file
+        run: |
+          touch cv.pdf
       # Setup git
       - name: setup git config
         run: |
