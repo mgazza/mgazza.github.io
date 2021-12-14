@@ -20,6 +20,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - name: Run Jeykll
+        run: |
+          docker create --name jeykll --network-alias jeykll -p 4000:4000 -v ${{ github.workspace }}:/srv/jekyll jekyll/jekyll:4.0.1 bundle install && bundle exec jekyll serve 
       # Setup git
       - name: Setup git config
         run: |
@@ -46,13 +49,6 @@ jobs:
         with:
           name: cv
           path: cv.pdf
-    # Service container to host the generated site
-    services:
-      jeykll:
-        image: jekyll/jekyll:4.0.1 
-        options: -v ${{ github.workspace }}:/srv/jekyll bundle install && bundle exec jekyll serve
-        ports:
-        - 4000:4000
         
         
     
