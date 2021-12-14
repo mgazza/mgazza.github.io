@@ -21,8 +21,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Run Jeykll
-        run: |
-          docker run --name jekyll --network-alias jekyll -p 4000:4000 -v "${{ github.workspace }}:/srv/jekyll" jekyll/jekyll:4.0.1 bash -c "chmod 777 /srv/jekyll && bundle install && bundle exec jekyll serve"
+        run: docker-compose -f "docker-compose.yml" up -d --build
       # Setup git
       - name: Setup git config
         run: |
@@ -50,6 +49,8 @@ jobs:
         with:
           name: cv
           path: cv.pdf
+      - name: Stop Jeykll
+        run: docker-compose -f "docker-compose.yml" down
         
         
     

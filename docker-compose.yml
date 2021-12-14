@@ -1,0 +1,18 @@
+version: '3'
+services:
+  jekyll:
+    image: jekyll/jekyll:4.0.1
+    command:
+      - bash -c "chmod 777 /srv/jekyll && bundle install && bundle exec jekyll serve"
+    hostname: jekyll
+    container_name: build_jekyll
+    expose:
+      - 4000
+    networks:
+      - jekyll
+    volumes:
+      - type: bind
+        source: .
+        target: /srv/jekyll
+networks:
+  jekyll:
