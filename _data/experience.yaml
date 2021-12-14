@@ -1,8 +1,11 @@
-- company: Kultralab
+- company: Dae.mn/ Kultralab
   title: Senior Software Engineer (Contract)
   date: Jun 2021 - present
   body: |
+    Working for Dae.mn's client Kultralab.
+    
     Kultralab are developing an app to revolutionise the workplace.
+    
     Responsabilities:
     * Delivery of infrastructure as code and declaritive infrastructure maintained using gitops.
     * Delivery of ci-cd pipelines.
