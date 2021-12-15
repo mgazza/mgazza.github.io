@@ -46,6 +46,7 @@ jobs:
       # Generate the pdf using chrome
       - name: Generate the pdf
         run: |
+          curl http://localhost:4000
           sudo chown runneradmin:runneradmin cv.pdf
           docker run \
           -v ${{ github.workspace }}:/usr/src/app \
