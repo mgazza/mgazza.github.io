@@ -9,7 +9,7 @@
                 {% for item in site.social %}
                 <li>
                     <span class="print">{{ item.title}}:&nbsp;</span>
-                    <a href="{{ item.href }}">
+                    <a href="{{ item.href }}"  onclick="trackClick('Social','{{ item.class }}',this.href);">
                         <i class="fa {{ item.class }} no-print"></i>
                         <span class="print">{{ item.href }}</span>
                     </a>
@@ -26,7 +26,7 @@
                     <span>Web:&nbsp;</span><a href="https://www.markgascoyne.co.uk">https://www.markgascoyne.co.uk</a>
                 </li>
                 <li>
-                    <a href="#contact" class="btn btn-primary no-print mt-3 page-scroll">Contact</a>
+                    <a href="#contact" class="btn btn-primary no-print mt-3 page-scroll" onclick="trackClick('Button','Contact','');">Contact</a>
                 </li>
                 <li class="print">
                     <span>Email:&nbsp;</span><span>contact@</span><span>markgascoyne.co.uk</span>
