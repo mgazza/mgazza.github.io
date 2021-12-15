@@ -21,7 +21,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Run Jeykll
-        run: docker-compose -f "docker-compose.yml" up
+        run: docker-compose -f "docker-compose.yml" up -d
       # Setup git
       - name: Setup git config
         run: |
@@ -34,7 +34,6 @@ jobs:
           curl http://localhost:4000/
           sudo chown runneradmin:runneradmin cv.pdf
           docker run \
-          --network container:build_jekyll \
           -v ${{ github.workspace }}:/usr/src/app \
           zenika/alpine-chrome --no-sandbox --print-to-pdf-no-header --print-to-pdf=cv.pdf --hide-scrollbars \
           http://jekyll:4000/
