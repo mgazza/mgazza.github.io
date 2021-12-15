@@ -20,8 +20,23 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Run Jeykll
-        run: docker-compose -f "docker-compose.yml" up -d
+      - name: Run Jekyll
+        run: docker-compose -f "docker-compose.yml" up -d && docker-compose start jekyll
+      - name: Wait for Jekyll
+        run: |
+          attempt_counter=0
+          max_attempts=5
+
+          until $(curl --output /dev/null --silent --head --fail http://localhost:4000); do
+              if [ ${attempt_counter} -eq ${max_attempts} ];then
+                echo "Max attempts reached"
+                exit 1
+              fi
+
+              printf '.'
+              attempt_counter=$(($attempt_counter+1))
+              sleep 10
+          done
       # Setup git
       - name: Setup git config
         run: |
@@ -31,7 +46,6 @@ jobs:
       # Generate the pdf using chrome
       - name: Generate the pdf
         run: |
-          curl http://localhost:4000/
           sudo chown runneradmin:runneradmin cv.pdf
           docker run \
           -v ${{ github.workspace }}:/usr/src/app \
