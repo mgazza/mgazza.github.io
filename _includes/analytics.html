@@ -6,4 +6,10 @@
     gtag('js', new Date());
 
     gtag('config', '{{ site.google_analytics }}');
+
+    function trackClick(cat,action,label) {
+        let tracker = ga.getAll()[0];
+        if (tracker)
+            tracker.send("event", cat, action, label);
+    }
 </script>

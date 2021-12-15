@@ -16,11 +16,7 @@
                 </li>
                 {% endfor %}
                 <li>
-                    <a href="cv.pdf" onclick="ga('send',{
-                        hitType: 'event',
-                        eventCategory: 'PDF',
-                        eventAction: 'Download',
-                        eventLabel: this.href});">
+                    <a href="cv.pdf" onclick="trackClick('Download','PDF',this.href);">
                         <i class="fa fa-download no-print"></i>
                     </a>
                 </li>
