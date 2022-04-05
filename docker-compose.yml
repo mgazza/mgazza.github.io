@@ -1,10 +1,13 @@
 version: '2.4'
 
 services:
-  jekyll:
-    container_name: jekyll
-    image: bretfisher/jekyll-serve
+  hugo:
+    container_name: hugo
+    image: klakegg/hugo
+    command:
+      - server
+    working_dir: /site
     volumes:
       - .:/site
     ports:
-      - '4000:4000'
+      - '1313:1313'

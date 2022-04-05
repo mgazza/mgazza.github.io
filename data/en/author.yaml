@@ -1,0 +1,18 @@
+# some information about you
+name: "Mark Gascoyne"
+nickname: "Mark"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I'm"
+image: "/images/author/profile.jpg"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "contact@markgascoyne.co.uk"
+  phone: "+447951553010"
+
+# some summary about what you do
+summary:
+  - I am a Developer
+  - I am a Polyglot
+  - I am a Gopher
+  - I love Kubernetes
+  - I work on open-source projects

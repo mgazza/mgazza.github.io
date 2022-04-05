@@ -1,0 +1,20 @@
+{{ define "header" }}
+{{ $cv := resources.Get "cv/cv.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="{{ $cv.Permalink }}"/>
+{{ end }}
+
+{{ define "content" }}
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+      {{ partial "cv/header.html" . }}
+      {{ partial "cv/about.html" }}
+      {{ partial "cv/skills.html" }}
+      {{ partial "cv/experience.html" }}
+      {{ partial "cv/education.html" }}
+      {{ partial "cv/testimonials.html" }}
+      {{ partial "cv/contact.html" }}
+  </div>
+</section>
+{{ end }}
+

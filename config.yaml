@@ -1,0 +1,46 @@
+baseURL : "https://www.markgascoyne.co.uk/"
+
+languageCode : "en-gb"
+title : "Mark Gascoyne - Software Engineer"
+theme : "toha"
+
+# Control TOC depth
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+# Enable global emoji support
+enableEmoji: true
+
+# Site parameters
+params:
+  # GitHub repo URL of your site
+  gitRepo: https://github.com/mgazza/mgazza.github.io
+
+  # specify whether you want to write some blog posts or not
+  enableBlogPost: false
+
+  # specify whether you want to show Table of Contents in reading page
+  enableTOC: false
+
+  # Provide newsletter configuration. This feature hasn't been implemented yet.
+  # Currently, you can just hide it from the footer.
+  newsletter:
+    enable: false
+
+  social:
+    - title: GitHub
+      url: https://github.com/mgazza
+      class: fa-github
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/markgascoyne
+      class: fa-linkedin
+    - title: Stack Overflow
+      url: https://stackoverflow.com/users/245052/mark
+      class: fa-stack-overflow
+
+  RecaptureKey: 6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy
+
+GoogleAnalytics: UA-168224295-2

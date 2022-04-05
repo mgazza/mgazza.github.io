@@ -20,14 +20,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Run Jekyll
-        run: docker-compose -f "docker-compose.yml" up -d && docker-compose start jekyll
-      - name: Wait for Jekyll
+      - name: Run Hugo
+        run: docker-compose -f "docker-compose.yml" up -d && docker-compose start hugo
+      - name: Wait for Hugo
         run: |
           attempt_counter=0
           max_attempts=5
 
-          until $(curl --output /dev/null --silent --head --fail http://localhost:4000); do
+          until $(curl --output /dev/null --silent --head --fail http://localhost:1313/cv); do
               if [ ${attempt_counter} -eq ${max_attempts} ];then
                 echo "Max attempts reached"
                 exit 1
@@ -46,25 +46,25 @@ jobs:
       # Generate the pdf using chrome
       - name: Generate the pdf
         run: |
-          sudo chown runneradmin:runneradmin cv.pdf
+          sudo chown runneradmin:runneradmin static/files/cv.pdf
           docker run \
-          --network container:jekyll \
+          --network container:hugo \
           -v ${{ github.workspace }}:/usr/src/app \
-          zenika/alpine-chrome --no-sandbox --print-to-pdf-no-header --print-to-pdf=cv.pdf --hide-scrollbars \
-          http://jekyll:4000/
+          zenika/alpine-chrome --no-sandbox --print-to-pdf-no-header --print-to-pdf=static/files/cv.pdf --hide-scrollbars \
+          http://hugo:1313/cv
       # Commit the generated pdf
       - name: Commit
         run: |
-          sudo chown runner:docker cv.pdf
+          sudo chown runner:docker static/files/cv.pdf
           # Stage the file, commit and push
-          git add cv.pdf
+          git add static/files/cv.pdf
           git commit -m "generated pdf"
           git push origin master
       - uses: actions/upload-artifact@v2
         with:
           name: cv
-          path: cv.pdf
-      - name: Stop Jeykll
+          path: static/files/cv.pdf
+      - name: Stop Hugo
         run: docker-compose -f "docker-compose.yml" down
         
         

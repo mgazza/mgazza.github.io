@@ -1,0 +1,227 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your experiences
+experiences:
+  - company:
+      name: Dae.mn/ Kultralab
+      url: "http://dae.mn/"
+      location: Remote
+      overview: |
+        Dae.mn (pronounced Dee-mun) is a technical consultancy that puts people first. Dae.mn help people in business do 
+        better work with technology.
+    positions:
+      - designation: Senior Software Engineer (Contract)
+        start: Jun 2021
+        responsibilities:
+         - Delivery of infrastructure as code and declaritive infrastructure maintained using gitops.
+         - Delivery of ci-cd pipelines.
+         - Refining the backlog, gathering requirements.
+         - Developing the supporting services
+        skills:
+         - aws
+         - postgresql
+         - golang
+         - skaffold
+         - kustomize
+         - flux
+         - kubernetes
+         - terraform
+         - k3s
+         - react
+         - graphql
+         - docker
+         - bitbucket
+         - jira
+         - confluence
+  - company:
+      name: Ve Global
+      url: "http://www.ve.com/"
+      location: Remote
+      overview: |
+        The Company offers platform which connects digital advertising, onsite engagement, and remarketing to optimise
+        the entire customer journey and add relevancy to every online experience. Ve Global UK serves customers worldwide.
+    positions:
+      - designation: Software Consultant
+        start: Jul 2020
+        end: Jun 2021
+        responsibilities:
+          - Restructuring of Ve's infrastructure and technology to save costs and create a more manageable environment.
+          - Introduce and setup local development using kustomise/skaffold/minikube.
+          - Rollout of GitOps to improve deployment pipelines.
+          - Training developers to develop best in class microservices.
+        skills:
+          - azure
+          - kubernetes
+          - skaffold
+          - kustomize
+          - vuejs
+          - kafka
+          - confluent-cloud
+          - golang
+          - docker
+          - flux
+  - company:
+      name: Thermeon Worldwide Ltd
+      url: "https://www.thermeon.com/"
+      location: Remote
+      overview: |
+        Thermeon Worldwide Ltd provides software solutions. The Company designs and develops car rental platform.
+        Thermeon Worldwide serves customers worldwide.
+    positions:
+      - designation: Software Engineer
+        start: Jan 2018
+        end: Jul 2020
+        body: |
+          At Thermeon I have worked closely with both the development and infrastructure teams which are spread all over the world.
+          I have both engineered micro services written in golang and delivered them via the Google Kubernetes Engine.
+          I have introduced operations via pull request to deliver continuous deployment, maintaining stability.
+        responsibilities:
+          - Undertake the companies first leap into Kubernetes.
+          - Working with all teams to introduce agile way of working.
+          - Work with the EU development team in an agile methodology to produce the single sign-on solution hosted in kubernetes and written in golang.
+          - Work with the US/EU teams to develop and deliver the PCI encryption micro service hosted in kubernetes and written in golang.
+          - Work with development and infrastructure teams to introduce Git-Ops using Weaveworks and various other Kubernetes tech (cert-manager, external-dns, sealed-secrets).
+          - Produce a Horizontal Pod Autoscaler for Kubernetes which uses pod readiness rather than metrics for scaling.
+          - Produce client facing website for booking rentals.
+        skills:
+          - github
+          - circle-ci
+          - kubernetes
+          - golang
+          - helm
+          - flux
+          - vuejs
+          - google-cloud
+          - docker
+          - linux
+          - cassandra
+          - swagger
+          - rest
+  - company:
+      name: Utilitywise PLC
+      url: "http://www.utilitywise.com/"
+      location: Chesterfield, UK
+      overview: |
+        Utilitywise PLC is an independent utility cost management consultancy company. The Company offers energy
+        procurement and energy management products and services aimed to assist customers with energy contracts,
+        reduce energy consumption and lower their carbon footprint.
+    positions:
+      - designation: Senior Software Engineer
+        start: Apr 2015
+        end: Jan 2018
+        body: |
+          Working as part of a team to deliver control and automation to the Wiselife IoT product.
+        responsibilities:
+          - Development of the Wiselife IoT product
+          - Development of supporting services
+          - Development and management of data services
+        skills:
+          - entity-framework
+          - sql-server
+          - z-wave
+          - modbus
+          - cassandra
+          - scala
+          - dotnet
+          - entity-framework
+          - nodejs
+          - docker
+          - linux
+          - tfs
+          - signalR
+          - redis
+          - git
+          - azure
+          - aws
+  - company:
+      name: t-mac Technologies Ltd
+      url: "https://www.t-mac.co.uk/"
+      location: Chesterfield, UK
+      overview: |
+        t-mac provides next-generation metering, monitoring and controls solutions.
+    positions:
+      - designation: Software Engineer
+        start: Apr 2012
+        end: Apr 2015
+        body: |
+          Web applications developer working in a fully agile environment, developing monitoring, controls and analysis
+          software used throughout the energy sector. I have gathered requirements, designed, developed and delivered bespoke
+          software solutions for some of the big names in energy industry.
+        responsibilities:
+          - Development of energy dashboards for clients
+          - Development of tmac energy analitics platform
+          - Development of data ingrestion and processing services
+        skills:
+          - csharp
+          - mvc
+          - java
+          - spring
+          - jquery
+          - entity-framework
+          - knockout
+          - backbone
+          - highcharts
+          - ssas
+  - company:
+      name: EnServe Group Limited
+      url: "http://www.enservegroup.com/"
+      location: Leeds, UK
+      overview: |
+        EnServe Group Limited provides utility infrastructure support services. The Company offers electricity
+        engineering, civil asset management, installation, analysis, and water network support services.
+        EnServe Group serves gas, electricity, and water distribution and retail companies globally.
+    positions:
+      - designation: Software Engineer
+        start: Sep 2010
+        end: Apr 2012
+        body: |
+          Under the direction of Richard Marr (Senior Lead Developer).
+        responsibilities:
+          - Development and maintenance of Job Track Enterprise (JTE) for H2O Water Services Ltd and Thames Water /Veolia Water.
+          - Full involvement in maintenance and in ongoing development of the JTE system for H2O, including Smartclient application,
+            website, web services, mobile devices database and SSIS packages.
+          - Full involvement in development of the JTE system for Thames Water in the run-up to live deployment, including all
+            of the above elements plus integration with the IBM Websphere messaging system for near real-time integration with
+            the Insight TMA system.
+          - Full involvement in interpretation of new requirements for both JTE systems in consultation with others both
+            internal and external, technical and non-technical.
+        skills:
+          - soap
+          - csharp
+          - sql-server
+          - vbdotnet
+          - ssis
+  - company:
+      name: Cse-Healthcare Systems Ltd
+      url: "http://www.cse-global.com/"
+      location: Eckington, UK
+      overview: |
+        Cse-Healthcare Systems Ltd. provides clinical information and patient administration systems.
+        The Company offers project management, training, product consultancy, configuration, technical consultancy, and
+        help desk services. Cse-Healthcare Systems develops its enterprise-wide systems for implementation across both
+        community and hospital based services.
+    positions:
+      - designation: Student Software Engineer
+        start: Jun 2008
+        end: Sep 2009
+        responsibilities:
+         - Maintaining product specialist’s demo laptop builds of RiO
+         - Development / Maintenance of internal tools used by all areas of CSE-healthcare systems
+         - Working as part of the live service team investigating software issues. Issuing hot fixes and releases.
+         - Working as part of the testing team testing software modules. Identifying code paths and testing plans.
+         - Design and created the replacement correspondence reference system which is used company wide (CSE-Global(UK) Ltd).
+         - Design and created a testing automation framework. I created a framework that automated web pages from the user
+           point of view. I made the framework very flexible and reusable and created documentation that allowed a novice to
+           quickly create tests and reuse code that has previously been created.
+        skills:
+          - csharp
+          - sql-server
+          - ssis
