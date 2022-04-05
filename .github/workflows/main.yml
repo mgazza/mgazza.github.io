@@ -68,9 +68,9 @@ jobs:
           publish_dir: ./public
       - uses: actions/upload-artifact@v2
         with:
-          name: cv
-          path: public/files/cv.pdf
-      - name: Stop Hugo
+          name: site
+          path: ./public
+      - name: Stop Http
         run: docker-compose -f "docker-compose.yml" down
         
         
