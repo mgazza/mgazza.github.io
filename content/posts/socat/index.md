@@ -32,3 +32,24 @@ kubectl run --restart=Never --image=alpine/socat ${PODNAME} -- -d -d tcp-listen:
 kubectl wait --for=condition=Ready pod/${PODNAME}
 kubectl port-forward pod/${PODNAME} ${PORT}:${PORT}
 ```
+
+
+### N.B you don't need to do use socat
+As you most probably be aware using socat to expose services like this is abit overkill
+you can simple use ExternalName services instead and port-forward that.
+
+```bash
+export PORT=5432
+export ADDR=postgres
+export SERVICE_NAME=backdoor
+cat <<EOF | kubeclt create -f -
+kind: Service
+apiVersion: v1
+metadata:
+  name: ${SERVICE_NAME}
+spec:
+  type: ExternalName
+  externalName: ${ADDR}
+EOF
+kubectl port-forward service/${SERVICE_NAME} ${PORT}:${PORT}
+```
