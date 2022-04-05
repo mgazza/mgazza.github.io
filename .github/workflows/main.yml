@@ -1,4 +1,4 @@
-name: Push
+name: github pages
 
 # Controls when the workflow will run
 on:
@@ -19,15 +19,27 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - name: Run Jekyll
-        run: docker-compose -f "docker-compose.yml" up -d && docker-compose start jekyll
-      - name: Wait for Jekyll
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      # Builds the html using hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+      - name: Build Hugo
+        run: hugo --minify
+      # Hosts the html using docker/nginx
+      - name: Bring up nginx
+        run: docker-compose -f "docker-compose.yml" up -d && docker-compose start http
+      - name: Wait for nginx
         run: |
           attempt_counter=0
           max_attempts=5
 
-          until $(curl --output /dev/null --silent --head --fail http://localhost:4000); do
+          until $(curl --output /dev/null --silent --head --fail http://localhost/cv); do
               if [ ${attempt_counter} -eq ${max_attempts} ];then
                 echo "Max attempts reached"
                 exit 1
@@ -37,34 +49,27 @@ jobs:
               attempt_counter=$(($attempt_counter+1))
               sleep 10
           done
-      # Setup git
-      - name: Setup git config
-        run: |
-          # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
       # Generate the pdf using chrome
       - name: Generate the pdf
         run: |
-          sudo chown runneradmin:runneradmin cv.pdf
+          sudo chown runneradmin:runneradmin public/files/cv.pdf
           docker run \
-          --network container:jekyll \
+          --network container:http \
           -v ${{ github.workspace }}:/usr/src/app \
-          zenika/alpine-chrome --no-sandbox --print-to-pdf-no-header --print-to-pdf=cv.pdf --hide-scrollbars \
-          http://jekyll:4000/
-      # Commit the generated pdf
-      - name: Commit
-        run: |
-          sudo chown runner:docker cv.pdf
-          # Stage the file, commit and push
-          git add cv.pdf
-          git commit -m "generated pdf"
-          git push origin master
+          zenika/alpine-chrome --no-sandbox --print-to-pdf-no-header --print-to-pdf=public/files/cv.pdf --hide-scrollbars \
+          http://http/cv
+      # Publish the generated site
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
       - uses: actions/upload-artifact@v2
         with:
           name: cv
-          path: cv.pdf
-      - name: Stop Jeykll
+          path: public/files/cv.pdf
+      - name: Stop Hugo
         run: docker-compose -f "docker-compose.yml" down
         
         

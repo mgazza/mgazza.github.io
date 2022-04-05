@@ -1,0 +1,273 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+  - name: kubernetes
+    title: Kubernetes
+    showOnMain: true
+    logo: "/images/sections/skills/kubernetes.png"
+    summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
+    url: https://kubernetes.io/
+    cat: orchestration
+  - name: golang
+    title: Go Development
+    showOnMain: true
+    summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable programs."
+    logo: "/images/sections/skills/golang.svg"
+    url: https://golang.org/
+    cat: languages
+  - name: cloud
+    title: Cloud Computing
+    logo: "/images/sections/skills/cloud.png"
+    summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+    hideFromCV: true
+    showOnMain: true
+  - name: helm
+    title: Helm
+    logo: "/images/sections/skills/helm.svg"
+    url: https://helm.sh/
+    cat: orchestration
+  - name: flux
+    title: Flux
+    logo: "/images/sections/skills/flux.png"
+    url: https://www.weave.works/oss/flux/
+    cat: orchestration
+  - name: skaffold
+    title: Skaffold
+    logo: "/images/sections/skills/skaffold.jpg"
+    url: https://skaffold.dev/
+    cat: orchestration
+  - name: kustomize
+    title: Kustomize
+    logo: "/images/sections/skills/kustomize.png"
+    url: https://kustomize.io/
+    cat: orchestration
+  - name: github
+    title: GitHub
+    logo: "/images/sections/skills/github.png"
+    url: https://github.com/
+    cat: management
+  - name: git
+    title: Git
+    logo: "/images/sections/skills/git.png"
+    url: https://git-scm.com/
+    cat: tools
+  - name: circle-ci
+    title: Circle CI
+    logo: "/images/sections/skills/circle-ci.png"
+    url: https://www.circleci.com/
+    cat: development
+  - name: vuejs
+    title: Vue js
+    logo: "/images/sections/skills/vuejs.png"
+    url: https://vuejs.org/
+    cat: ux
+  - name: swagger
+    title: Swagger
+    logo: "/images/sections/skills/swagger.png"
+    url: https://swagger.io/
+    cat: web
+  - name: rest
+    title: Rest
+    logo: "/images/sections/skills/rest.png"
+    url: https://restfulapi.net/
+    cat: web
+  - name: dotnet
+    title: .Net
+    logo: "/images/sections/skills/dotnet.png"
+    url: https://dotnet.microsoft.com/
+    cat: technologies
+  - name: sql-server
+    title: Sql Server
+    logo: "/images/sections/skills/sql-server.svg"
+    url: https://www.microsoft.com/en-in/sql-server/sql-server-2019
+    cat: databases
+  - name: csharp
+    title: CSharp
+    logo: "/images/sections/skills/csharp.png"
+    url: https://docs.microsoft.com/en-us/dotnet/csharp/
+    cat: languages
+  - name: vbdotnet
+    title: VB.Net
+    logo: "/images/sections/skills/vbdotnet.jpg"
+    url: https://docs.microsoft.com/en-us/dotnet/visual-basic/
+    cat: languages
+  - name: z-wave
+    title: Z Wave
+    logo: "/images/sections/skills/zwave.png"
+    url: https://www.z-wave.com/
+    cat: protocols
+  - name: google-cloud
+    title: Google Cloud
+    logo: "/images/sections/skills/google-cloud.png"
+    url: https://cloud.google.com/
+    cat: cloud-platforms
+  - name: docker
+    title: Docker
+    logo: "/images/sections/skills/docker.png"
+    url: https://www.docker.com/
+    cat: orchestration-technologies
+  - name: linux
+    title: Linux
+    logo: "/images/sections/skills/linux.png"
+    url: https://www.linux.org/
+    cat: opperating-systems
+  - name: cassandra
+    title: Cassandra
+    logo: "/images/sections/skills/cassandra.png"
+    url: https://cassandra.apache.org/
+    cat: databases
+  - name: entity-framework
+    title: Entity Framework
+    logo: "/images/sections/skills/entityframework.png"
+    url: https://docs.microsoft.com/en-us/ef/
+    cat: database-frameworks
+  - name: modbus
+    title: Modbus
+    logo: "/images/sections/skills/modbus.png"
+    url: http://www.modbus.org/
+    cat: protocols
+  - name: scala
+    title: Scala
+    logo: "/images/sections/skills/scala.png"
+    url: https://www.scala-lang.org/
+    cat: languages
+  - name: nodejs
+    title: Node js
+    logo: "/images/sections/skills/nodejs.svg"
+    url: https://nodejs.org/
+    cat: languages
+  - name: tfs
+    title: TFS
+    logo: "/images/sections/skills/tfs.jpg"
+    url: https://azure.microsoft.com/en-gb/services/devops/server/
+    cat: management
+  - name: signalR
+    title: Signalr
+    logo: "/images/sections/skills/signalr.svg"
+    url: https://dotnet.microsoft.com/apps/aspnet/signalr
+    cat: ux
+  - name: redis
+    title: Redis
+    logo: "/images/sections/skills/redis.png"
+    url: https://redis.io/
+    cat: databases
+  - name: azure
+    title: Azure
+    logo: "/images/sections/skills/azure.svg"
+    url: https://azure.microsoft.com/en-gb/
+    cat: cloud-platforms
+  - name: aws
+    title: AWS
+    logo: "/images/sections/skills/aws.svg"
+    url: https://aws.amazon.com
+    cat: cloud-platforms
+  - name: mvc
+    title: MVC
+    logo: "/images/sections/skills/mvc.jpg"
+    url: https://dotnet.microsoft.com/apps/aspnet/mvc
+    cat: frameworks
+  - name: java
+    title: Java
+    logo: "/images/sections/skills/java.svg"
+    url: https://www.java.com/
+    cat: languages
+  - name: spring
+    title: Spring
+    logo: "/images/sections/skills/spring.svg"
+    url: https://spring.io/
+    cat: frameworks
+  - name: jquery
+    title: JQuery
+    logo: "/images/sections/skills/jquery.svg"
+    url: https://jquery.com/
+    cat: ux
+  - name: knockout
+    title: Knockout
+    logo: "/images/sections/skills/knockout.png"
+    url: https://knockoutjs.com/
+    cat: ux
+  - name: backbone
+    title: Backbone js
+    logo: "/images/sections/skills/backbone.png"
+    url: https://backbonejs.org/
+    cat: ux
+  - name: highcharts
+    title: Highcharts
+    logo: "/images/sections/skills/highcharts.svg"
+    url: https://highcharts.com/
+    cat: ux
+  - name: ssas
+    title: Microsoft SSAS
+    logo: "/images/sections/skills/ssas.png"
+    url: https://docs.microsoft.com/en-us/analysis-services/
+    cat: databases
+  - name: soap
+    title: Soap
+    logo: "/images/sections/skills/soap.png"
+    url: https://en.wikipedia.org/wiki/SOAP
+    cat: web
+  - name: ssis
+    title: SQL Server Integration Services
+    logo: "/images/sections/skills/ssis.jpg"
+    url: https://docs.microsoft.com/en-us/sql/integration-services/
+    cat: databases
+  - name: kafka
+    title: Apache Kafka
+    logo: "/images/sections/skills/kafka.svg"
+    url: https://kafka.apache.org/
+    cat: messaging
+  - name: confluence
+    title: Confluence
+    logo: "/images/sections/skills/confluence.svg"
+    url: https://confluence.atlassian.com/
+    cat: management
+  - name: jira
+    title: Jira
+    logo: "/images/sections/skills/jira.svg"
+    url: https://www.atlassian.com/software/jira
+    cat: management
+  - name: bitbucket
+    title: BitBucket
+    logo: "/images/sections/skills/bitbucket.svg"
+    url: https://bitbucket.org/
+    cat: management
+  - name: postgresql
+    title: PostgreSQL
+    logo: "/images/sections/skills/postgresql.svg"
+    url: https://www.postgresql.org/
+    cat: databases
+  - name: react
+    title: React
+    logo: "/images/sections/skills/react.svg"
+    url: https://reactjs.org/
+    cat:
+  - name: terraform
+    title: Terraform
+    logo: "/images/sections/skills/terraform.svg"
+    url: https://www.terraform.io/
+    cat: orchestration
+  - name: k3s
+    title: K3S
+    logo: "/images/sections/skills/k3s.svg"
+    url: https://k3s.io/
+    cat: orchestration
+  - name: confluent-cloud
+    title: Confluent Cloud
+    logo: "/images/sections/skills/confluent-cloud.png"
+    url: https://www.confluent.io/
+    cat: cloud-platforms
+  - name: graphql
+    title: GraphQl
+    logo: "/images/sections/skills/graphql.svg"
+    url: https://graphql.org/
+    cat: web

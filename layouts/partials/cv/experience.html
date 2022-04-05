@@ -1,0 +1,54 @@
+<div id="experience" class="container">
+    <h3 class="text-center">Experience</h3>
+    {{ range (index site.Data site.Language.Lang).sections.experiences.experiences }}
+    {{ $co:= .company}}
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <h4>{{ $co.name }}</h4>
+        </div>
+    </div>
+    {{ range .positions }}
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <p class="text-muted">{{ .designation }}</p>
+            <p class="text-muted font-italic">{{ .start }} - {{ if .end }}{{ .end }}{{ else }}Present{{ end }}</p>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9">
+            <p>
+            <ul>{{ range .responsibilities }}
+            <li>{{.}}</li>
+
+            {{end}}</ul>
+            </p>
+
+        </div>
+    </div>
+    <div class="row skill-row">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <p class="text-muted text-sm-right">Skills</p>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9 text-center text-md-left">
+            <p>
+                {{ range .skills }}
+                {{ $allSkills := (index site.Data site.Language.Lang).sections.skills.skills  }}
+                {{  $skills :=  where $allSkills "name" . }}
+                {{ if gt (len $skills) 0 }}
+                {{ range first 1 $skills }}
+                {{ $logoImage := resources.Get .logo }}
+                <a href="{{ .url }}" title="{{ .name }}" class="skill">
+                    <img class="no-print" alt="{{ .name }}" src="{{ $logoImage.RelPermalink }}"/>
+                    <span class="print">{{ .name }}</span>
+                </a>
+                {{ end }}
+
+                {{ else }}
+                {{.}}
+                {{ end }}
+
+                {{ end }}
+            </p>
+        </div>
+    </div>
+    {{ end }}
+    {{ end }}
+</div>

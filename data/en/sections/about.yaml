@@ -1,0 +1,43 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Software Engineer
+# your company information
+company:
+  name: Code Laboratory
+  url: "https://www.codelaboratory.co.uk"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "/files/cv.pdf"
+
+# a summary about you
+summary: |
+    Software Engineer Bsc(Hons) with a wealth of knowledge and experience utilising software technologies and design patterns.
+    I have proven time and again that I am creative, dependable, resourceful and self motivated.
+    I always have a solution or know a way to obtain and apply it to any given problem.
+
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+  - name: GitHub
+    url: https://github.com/mgazza
+    icon: fab fa-github
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/markgascoyne
+    icon: fab fa-linkedin
+  - name: Stack Overflow
+    url: https://stackoverflow.com/users/245052/mark
+    icon: fab fa-stack-overflow
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:

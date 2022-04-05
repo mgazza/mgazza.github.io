@@ -1,0 +1,14 @@
+<div id="about" class="container">
+    <h3 class="text-center">About Me</h3>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            {{ $image := resources.Get (index site.Data site.Language.Lang).author.image }}
+            <img  src="{{ $image.RelPermalink }}" class="rounded-circle img-fluid mx-auto d-block profile-img">
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9 text-center text-sm-left">
+            <p>
+                {{ (index site.Data site.Language.Lang).sections.about.summary | markdownify}}
+            </p>
+        </div>
+    </div>
+</div>

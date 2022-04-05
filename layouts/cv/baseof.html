@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{(index site.Data site.Language.Lang).author.name}} Resume</title>
+
+    <!------ ADD PAGE SPECIFIC HEADERS ------->
+    {{ block "header" . }} {{ end }}
+
+    <!-- ADD GOOGLE ANALYTICS IF ENABLED -->
+    {{ if site.GoogleAnalytics }}
+      {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
+  </head>
+
+  <body>
+    <!----- ADD PAGE CONTENT --------->
+    {{ block "content" . }} {{ end }}
+
+    <!------- ADD COMMON SCRIPTS ------->
+    {{ partial "cv/scripts.html" . }}
+  </body>
+</html>

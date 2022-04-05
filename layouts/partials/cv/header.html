@@ -1,0 +1,41 @@
+<div id="header" class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 text-center text-md-left">
+            <h1>Mark Gascoyne</h1>
+            <h5>Polyglot Software Engineer</h5>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-center text-md-right">
+            <ul class="social no-list">
+                {{ range (index site.Data site.Language.Lang).sections.about.socialLinks }}
+                <li>
+                    <span class="print">{{ .name }}:&nbsp;</span>
+                    <a href="{{ .url }}" onclick="trackClick('Social','{{ .name }}', this.href);">
+                        <i class="{{ .icon }} no-print"></i>
+                        <span class="print">{{ .url }}</span>
+                    </a>
+                </li>
+                {{ end }}
+                <li>
+                    <a href=" {{ (index site.Data site.Language.Lang).sections.about.resume }}" onclick="trackClick('Download','PDF',this.href);">
+                        <i class="fa fa-file-download no-print"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="no-list">
+                <li>
+                    <span>Web:&nbsp;</span><a href="https://www.markgascoyne.co.uk">https://www.markgascoyne.co.uk</a>
+                </li>
+                <li>
+                    <a href="#contact" class="btn btn-primary no-print mt-3 page-scroll" onclick="trackClick('Button','Contact','');">Contact</a>
+                </li>
+                <li class="print">
+                    <span>Email:&nbsp;</span><span>contact@</span><span>markgascoyne.co.uk</span>
+                </li>
+                <li class="print">
+                    <span>Phone:&nbsp;</span><span>07951</span>&nbsp;<span>553010</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
