@@ -42,7 +42,7 @@ you can simply use ExternalName services instead and port-forward that.
 export PORT=5432
 export ADDR=postgres
 export SERVICE_NAME=backdoor
-cat <<EOF | kubeclt create -f -
+cat <<EOF | kubectl create -f -
 kind: Service
 apiVersion: v1
 metadata:
