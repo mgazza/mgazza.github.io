@@ -13,7 +13,7 @@ your cluster without having to set up and manage VPN&rsquo;s.</p><p>How it works
 you can simply use ExternalName services instead and port-forward that.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>export PORT<span style=color:#f92672>=</span><span style=color:#ae81ff>5432</span>
 </span></span><span style=display:flex><span>export ADDR<span style=color:#f92672>=</span>postgres
 </span></span><span style=display:flex><span>export SERVICE_NAME<span style=color:#f92672>=</span>backdoor
-</span></span><span style=display:flex><span>cat <span style=color:#e6db74>&lt;&lt;EOF | kubeclt create -f -
+</span></span><span style=display:flex><span>cat <span style=color:#e6db74>&lt;&lt;EOF | kubectl create -f -
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>kind: Service
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>apiVersion: v1
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>metadata:
