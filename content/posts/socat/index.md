@@ -34,9 +34,9 @@ kubectl port-forward pod/${PODNAME} ${PORT}:${PORT}
 ```
 
 
-### N.B you don't need to do use socat
-As you most probably be aware using socat to expose services like this is abit overkill
-you can simple use ExternalName services instead and port-forward that.
+### You don't need to do use socat
+As most of you will probably be aware using socat to expose services like this is a bit overkill,
+you can simply use ExternalName services instead and port-forward that.
 
 ```bash
 export PORT=5432
