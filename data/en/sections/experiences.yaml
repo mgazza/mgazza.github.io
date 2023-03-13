@@ -11,8 +11,41 @@ section:
 # Your experiences
 experiences:
   - company:
+      name: Vitrifi
+      url: "https://www.vitrifi.net/"
+      location: Remote
+      overview: | 
+        Vitrifi is revolutionising the Telco industry by providing lightweight software solutions to ISP's.
+    positions:
+      - designation: Gitops Consultant
+        start: Dec 2022
+        responsibilities:
+          - Align all DevOps teams with the unified GitOps deployment strategy.
+          - Work to create a unified GitOps deployment strategy for DevOps.
+          - Implement a unified GitOps deployment for all DevOps teams.
+          - Assist team members with use of unified GitOps deployments.
+          - Assist team members with GitOps local development environment.
+          - Assist team members with transition between manifest management tooling.
+          - Assist in creating a common shared understanding of all team’s GitOps within the SRE function.
+        skills:
+          - aws
+          - golang
+          - kustomize
+          - argocd
+          - flux
+          - k3s
+          - kubernetes
+          - docker
+          - gitlab
+      - designation: Senior Go Developer
+        start: Jun 2022
+        end: Dec 2022
+        responsibilities:
+          - Develop CI/CD pipelines in with Gitlab CI
+          - Develop CNE kubernetes operator
+  - company:
       name: Dae.mn/ Kultralab
-      url: "http://dae.mn/"
+      url: "https://dae.mn/"
       location: Remote
       overview: |
         Dae.mn (pronounced Dee-mun) is a technical consultancy that puts people first. Dae.mn help people in business do 
@@ -20,11 +53,12 @@ experiences:
     positions:
       - designation: Senior Software Engineer (Contract)
         start: Jun 2021
+        end: Jun 2022
         responsibilities:
-         - Delivery of infrastructure as code and declaritive infrastructure maintained using gitops.
+         - Delivery of infrastructure as code and declarative infrastructure maintained using gitops.
          - Delivery of ci-cd pipelines.
          - Refining the backlog, gathering requirements.
-         - Developing the supporting services
+         - Developing the supporting services.
         skills:
          - aws
          - postgresql

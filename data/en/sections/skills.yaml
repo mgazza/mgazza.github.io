@@ -13,7 +13,6 @@ section:
 skills:
   - name: kubernetes
     title: Kubernetes
-    showOnMain: true
     logo: "/images/sections/skills/kubernetes.png"
     summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
     url: https://kubernetes.io/
@@ -271,3 +270,13 @@ skills:
     logo: "/images/sections/skills/graphql.svg"
     url: https://graphql.org/
     cat: web
+  - name: argocd
+    title: Argo
+    logo: "/images/sections/skills/argo-stacked-color.svg"
+    url: https://github.com/argoproj/argo-cd
+    cat: orchestration
+  - name: gitlab
+    title: GitLab
+    logo: "/images/sections/skills/gitlab-logo-100.svg"
+    url: https://gitlab.com/
+    cat: management
