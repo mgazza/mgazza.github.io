@@ -235,9 +235,9 @@ experiences:
           software used throughout the energy sector. I have gathered requirements, designed, developed and delivered bespoke
           software solutions for some of the big names in energy industry.
         responsibilities:
-          - Development of energy dashboards for clients
-          - Development of tmac energy analitics platform
-          - Development of data ingrestion and processing services
+          - Designed and developed customized energy dashboards for diverse clients, enhancing data visualization and analysis capabilities.
+          - Spearheaded the creation of the tmac energy analytics platform, optimizing energy consumption insights for stakeholders.
+          - Engineered data ingestion and processing services, streamlining data handling and analysis workflows for improved efficiency.
         skills:
           - csharp
           - mvc
