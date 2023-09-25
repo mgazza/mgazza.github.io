@@ -17,8 +17,43 @@ experiences:
       overview: | 
         Vitrifi is revolutionising the Telco industry by providing lightweight software solutions to ISP's.
     positions:
-      - designation: Gitops Consultant
+      - designation: Network Services Lead
+        start: Jun 2023
+        responsibilities:
+          - Providing technical expertise to help design scalable and maintainable software architectures.
+          - Reviewing code submissions from team members to ensure adherence to coding standards, best practices, and quality.
+          - Assigning tasks and responsibilities to team members based on their skills and project requirements.
+          - Collaborating with product managers to create project plans, set milestones, and estimate timelines.
+          - Monitoring the team's progress, identifying bottlenecks, and taking corrective actions to ensure project goals are met.
+          - Supporting team members in their professional growth, helping them acquire new skills, and providing guidance on career paths.
+          - Promoting knowledge sharing within the team to foster a culture of learning and continuous improvement.
+          - Facilitating communication within the team, ensuring everyone is aligned on project goals and tasks.
+          - Representing the team in meetings with stakeholders, providing updates on project status and addressing concerns.
+          - Ensuring that appropriate testing processes are followed and that the software meets quality standards.
+          - Prioritizing and managing bug reports, collaborating with the team to resolve issues efficiently.
+          - Addressing conflicts or issues within the team, promoting a healthy and productive work environment.
+          - Escalating critical issues to upper management when necessary.
+          - Participating in the recruitment process, conducting interviews, and helping to build a strong team.
+          - Fostering a collaborative and inclusive team culture that encourages creativity and innovation.
+          - Ensuring that technical documentation is up to date and readily accessible to team members.
+          - Identifying potential risks to project delivery and taking proactive measures to mitigate them.
+          - Keeping up-to-date with industry trends and evaluating new technologies that can improve the team's efficiency and the quality of the software.
+          - Managing the team's budget and resources effectively, ensuring that resources are allocated optimally to meet project goals.
+          - Conducting performance reviews and providing constructive feedback to team members.
+          - Ensuring that the team follows company policies, including security and compliance standards.
+          - Identifying areas where processes and practices can be improved and implementing changes to enhance team productivity and software quality.
+        skills:
+          - aws
+          - golang
+          - kustomize
+          - argocd
+          - k3s
+          - kubernetes
+          - docker
+          - gitlab
+      - designation: Gitops Consultant (Contract)
         start: Dec 2022
+        end: Jun 2023
         responsibilities:
           - Align all DevOps teams with the unified GitOps deployment strategy.
           - Work to create a unified GitOps deployment strategy for DevOps.
@@ -37,12 +72,22 @@ experiences:
           - kubernetes
           - docker
           - gitlab
-      - designation: Senior Go Developer
+      - designation: Senior Go Developer (Contract)
         start: Jun 2022
         end: Dec 2022
         responsibilities:
           - Develop CI/CD pipelines in with Gitlab CI
           - Develop CNE kubernetes operator
+        skills:
+          - aws
+          - golang
+          - kustomize
+          - argocd
+          - flux
+          - k3s
+          - kubernetes
+          - docker
+          - gitlab
   - company:
       name: Dae.mn/ Kultralab
       url: "https://dae.mn/"
