@@ -57,7 +57,7 @@ jobs:
           docker run \
           --network container:http \
           -v ${{ github.workspace }}:/usr/src/app \
-          zenika/alpine-chrome --no-sandbox --print-to-pdf-no-header --print-to-pdf=public/files/cv.pdf --hide-scrollbars \
+          zenika/alpine-chrome:102 --no-sandbox --no-pdf-header-footer --print-to-pdf=public/files/cv.pdf --hide-scrollbars \
           http://http/cv
       # Publish the generated site
       - name: Deploy
