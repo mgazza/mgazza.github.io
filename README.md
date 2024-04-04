@@ -1,0 +1,5 @@
+# mgazza.github.io
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b1b93b02-f278-440b-ae1b-304e9f4c4ab5/deploy-status)](https://app.netlify.com/sites/toha/deploys) [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fhugo-toha%2Fmgazza.github.io%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/mgazza/mgazza.github.io/goto?ref=main) ![Repository Size](https://img.shields.io/github/repo-size/mgazza/mgazza.github.io) ![Contributor](https://img.shields.io/github/contributors/mgazza/mgazza.github.io) ![Last Commit](https://img.shields.io/github/last-commit/mgazza/mgazza.github.io) ![License](https://img.shields.io/github/license/mgazza/mgazza.github.io) ![Open Issues](https://img.shields.io/github/issues/mgazza/mgazza.github.io?color=important) ![Open Pull Requests](https://img.shields.io/github/issues-pr/mgazza/mgazza.github.io?color=yellowgreen) [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/b7cb60ab/mgazza.github.io)
+
+My hugo static site with Toha theme.

@@ -17,6 +17,7 @@ skills:
     summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
     url: https://kubernetes.io/
     cat: orchestration
+    showOnMain: true
   - name: golang
     title: Go Development
     showOnMain: true
@@ -27,7 +28,7 @@ skills:
   - name: cloud
     title: Cloud Computing
     logo: "/images/sections/skills/cloud.png"
-    summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+    summary: "Worked with most of the cloud providers such as GCP, AWS, Azure, OCI etc."
     hideFromCV: true
     showOnMain: true
   - name: helm
