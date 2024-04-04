@@ -56,9 +56,9 @@ params:
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
   logo:
-    main: /images/site/main-logo.png
-    inverted: /images/site/inverted-logo.png
-    favicon: /images/site/favicon.png
+    main: /images/site/icon.svg
+    inverted: /images/site/icon.svg
+    favicon: /images/site/icon.svg
 
   # GitHub repo of your site
   gitRepo: https://github.com/mgazza/mgazza.github.io
