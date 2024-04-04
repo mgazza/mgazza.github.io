@@ -2,33 +2,126 @@ baseURL : "/"
 
 languageCode : "en-gb"
 title : "Mark Gascoyne - Software Engineer"
-theme : "toha"
+
+# Use Hugo modules to add theme
+module:
+  imports:
+    - path: github.com/hugo-toha/toha/v4
+  mounts:
+    - source: static/files
+      target: static/files
+    - source: ./node_modules/flag-icon-css/flags
+      target: static/flags
+    - source: ./node_modules/@fontsource/mulish/files
+      target: static/files
+    - source: ./node_modules/katex/dist/fonts
+      target: static/fonts
+
+# Manage languages
+# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
+languages:
+  en:
+    languageName: English
+    weight: 1
+
 
 # Control TOC depth
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   tableOfContents:
     startLevel: 2
     endLevel: 6
     ordered: false
+
+# At least HTML and JSON are required for the main HTML content and
+# client-side JavaScript search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 # Enable global emoji support
 enableEmoji: true
 
 # Site parameters
 params:
+
   # GitHub repo URL of your site
   gitRepo: https://github.com/mgazza/mgazza.github.io
+  # Default branch of your Git repo
+  gitBranch: main
 
-  # specify whether you want to write some blog posts or not
-  enableBlogPost: false
+  # Configure various features of this theme
+  features:
+    # Enable dark theme
+    darkMode:
+      enable: true
 
-  # specify whether you want to show Table of Contents in reading page
-  enableTOC: false
+    # Enable and configure portfolio
+    portfolio:
+      enable: true
 
-  # Provide newsletter configuration. This feature hasn't been implemented yet.
-  # Currently, you can just hide it from the footer.
-  newsletter:
-    enable: false
+    # Enable and configure blog posts
+    blog:
+      enable: true
+      showAuthor: true # shows the author of post (defaults true)
+      # Share post on different social media
+      shareButtons:
+        facebook: true
+        twitter: true
+        linkedin: true
+        reddit: true
+        whatsapp: true
+        email: true
+        # tumblr: true
+        # pocket: true
+        # diaspora: true
+        # mastodon: true
+
+    # Enable Analytics
+    analytics:
+      enabled: true
+      services:
+        # Google Analytics
+        google:
+          id: UA-168224295-2
+
+    # specify whether you want to show Table of Contents in reading page
+    toc:
+      enable: false
+
+
+  # Provide footer configuration.
+  footer:
+    enable: true
+    # You can provide your custom footer template using this option.
+    # Put your template in "layouts/partials" folder of your repo.
+    template: footer.html
+    # Show/hide navigation in the footer. Default is "true".
+    navigation:
+      enable: true
+      # show custom menus in the footer
+      customMenus: true
+    # Show/hide "Contact Me" section in the footer. Default is "true".
+    contactMe:
+      enable: true
+    # Show/hide credentials section in the footer. Default is "true".
+    credentials:
+      enable: true
+
+    # Show/hide newsletter section in the footer. Default is "true".
+    # Currently, it supports "mailchimp".
+    newsletter:
+      enable: false
+      # provider: mailchimp
+      # mailchimpURL: https://github.us1.list-manage.com/subscribe/post?u=19de52a4603135aae97163fd8&amp;id=094a24c76e
+
+    # Show/hide disclaimer notice in the footer. Default is "false".
+    disclaimer:
+      enable: true
 
   social:
     - title: GitHub
@@ -41,6 +134,11 @@ params:
       url: https://stackoverflow.com/users/245052/mark
       class: fa-stack-overflow
 
+
   RecaptureKey: 6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy
 
 GoogleAnalytics: UA-168224295-2
+
+
+
+
