@@ -1,4 +1,0 @@
-minify:
-  tdewolff:
-    html:
-      keepWhitespace: true
