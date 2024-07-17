@@ -14,7 +14,6 @@
         </div>
         <div class="item-details">
             {{ if .responsibilities }}
-            <div class="responsibilities-header h6">Responsibilities</div>
             <div class="responsibilities-details">
                 {{ if reflect.IsSlice .responsibilities }}
                 <ul>
@@ -28,7 +27,7 @@
             </div>
             {{ end }}
         </div>
-        <div class="achievements-details">
+        <div class="item-details">
             {{ if .achievements }}
             <div class="achievements-header h6">Achievements</div>
             <div class="achievements-details">
@@ -40,7 +39,7 @@
             </div>
             {{ end }}
         </div>
-        <div class="skills-details">
+        <div class="item-details">
             {{ if .skills }}
             <div class="skills-header h6">Skills</div>
             <div class="skills-details">
