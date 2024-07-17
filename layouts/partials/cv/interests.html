@@ -1,0 +1,6 @@
+<div class="resume-section">
+    <div class="title">Interests</div>
+    <div class="interest-details">
+        {{ (index site.Data site.Language.Lang).sections.about.interests | markdownify }}
+    </div>
+</div>
