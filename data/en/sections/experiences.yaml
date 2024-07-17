@@ -14,34 +14,30 @@ experiences:
       name: Vitrifi
       url: "https://www.vitrifi.net/"
       location: Remote
-      overview: | 
+      overview: |
         Vitrifi is revolutionising the Telco industry by providing lightweight software solutions to ISP's.
     positions:
       - designation: Network Services Lead
         start: Jun 2023
-        responsibilities:
-          - Providing technical expertise to help design scalable and maintainable software architectures.
-          - Reviewing code submissions from team members to ensure adherence to coding standards, best practices, and quality.
-          - Assigning tasks and responsibilities to team members based on their skills and project requirements.
-          - Collaborating with product managers to create project plans, set milestones, and estimate timelines.
-          - Monitoring the team's progress, identifying bottlenecks, and taking corrective actions to ensure project goals are met.
-          - Supporting team members in their professional growth, helping them acquire new skills, and providing guidance on career paths.
-          - Promoting knowledge sharing within the team to foster a culture of learning and continuous improvement.
-          - Facilitating communication within the team, ensuring everyone is aligned on project goals and tasks.
-          - Representing the team in meetings with stakeholders, providing updates on project status and addressing concerns.
-          - Ensuring that appropriate testing processes are followed and that the software meets quality standards.
-          - Prioritizing and managing bug reports, collaborating with the team to resolve issues efficiently.
-          - Addressing conflicts or issues within the team, promoting a healthy and productive work environment.
-          - Escalating critical issues to upper management when necessary.
-          - Participating in the recruitment process, conducting interviews, and helping to build a strong team.
-          - Fostering a collaborative and inclusive team culture that encourages creativity and innovation.
-          - Ensuring that technical documentation is up to date and readily accessible to team members.
-          - Identifying potential risks to project delivery and taking proactive measures to mitigate them.
-          - Keeping up-to-date with industry trends and evaluating new technologies that can improve the team's efficiency and the quality of the software.
-          - Managing the team's budget and resources effectively, ensuring that resources are allocated optimally to meet project goals.
-          - Conducting performance reviews and providing constructive feedback to team members.
-          - Ensuring that the team follows company policies, including security and compliance standards.
-          - Identifying areas where processes and practices can be improved and implementing changes to enhance team productivity and software quality.
+        responsibilities: |
+          I provide technical expertise to help design scalable and maintainable software architectures. I review code submissions from team members to ensure adherence to coding standards, best practices, and quality. Additionally, I assign tasks and responsibilities to team members based on their skills and project requirements, and collaborate with product managers to create project plans, set milestones, and estimate timelines. I monitor the team's progress, identify bottlenecks, and take corrective actions to ensure project goals are met. I support team members in their professional growth, helping them acquire new skills and providing guidance on career paths.
+        achievements:
+          - Promoted knowledge sharing within the team to foster a culture of learning and continuous improvement.
+          - Facilitated communication within the team, ensuring alignment on project goals and tasks.
+          - Represented the team in meetings with stakeholders, providing updates on project status and addressing concerns.
+          - Ensured appropriate testing processes were followed, and that the software met quality standards.
+          - Prioritized and managed bug reports, collaborating with the team to resolve issues efficiently.
+          - Addressed conflicts or issues within the team, promoting a healthy and productive work environment.
+          - Escalated critical issues to upper management when necessary.
+          - Participated in the recruitment process, conducting interviews, and helping to build a strong team.
+          - Fostered a collaborative and inclusive team culture that encourages creativity and innovation.
+          - Ensured that technical documentation was up to date and readily accessible to team members.
+          - Identified potential risks to project delivery and took proactive measures to mitigate them.
+          - Kept up-to-date with industry trends and evaluated new technologies to improve the team's efficiency and the quality of the software.
+          - Managed the team's budget and resources effectively, ensuring optimal allocation to meet project goals.
+          - Conducted performance reviews and provided constructive feedback to team members.
+          - Ensured the team followed company policies, including security and compliance standards.
+          - Identified areas for process improvement and implemented changes to enhance team productivity and software quality.
         skills:
           - aws
           - golang
@@ -51,17 +47,13 @@ experiences:
           - kubernetes
           - docker
           - gitlab
-      - designation: Gitops Consultant (Contract)
+      - designation: Gitops Consultant
         start: Dec 2022
         end: Jun 2023
-        responsibilities:
-          - Align all DevOps teams with the unified GitOps deployment strategy.
-          - Work to create a unified GitOps deployment strategy for DevOps.
-          - Implement a unified GitOps deployment for all DevOps teams.
-          - Assist team members with use of unified GitOps deployments.
-          - Assist team members with GitOps local development environment.
-          - Assist team members with transition between manifest management tooling.
-          - Assist in creating a common shared understanding of all team’s GitOps within the SRE function.
+        responsibilities: |
+          I aligned all DevOps teams with the unified GitOps deployment strategy, and created and implemented a unified GitOps deployment strategy for DevOps. I assisted team members with the use of unified GitOps deployments and local development environments, and facilitated the transition between manifest management tooling.
+        achievements:
+          - Assisted in creating a common shared understanding of all team’s GitOps within the SRE function.
         skills:
           - aws
           - golang
@@ -72,12 +64,13 @@ experiences:
           - kubernetes
           - docker
           - gitlab
-      - designation: Senior Go Developer (Contract)
+      - designation: Senior Go Developer
         start: Jun 2022
         end: Dec 2022
-        responsibilities:
-          - Develop CI/CD pipelines in with Gitlab CI
-          - Develop CNE kubernetes operator
+        responsibilities: |
+          I developed CI/CD pipelines with Gitlab CI and a CNE Kubernetes operator.
+        achievements:
+          - Successfully delivered CI/CD pipelines and CNE Kubernetes operator.
         skills:
           - aws
           - golang
@@ -93,49 +86,47 @@ experiences:
       url: "https://dae.mn/"
       location: Remote
       overview: |
-        Dae.mn (pronounced Dee-mun) is a technical consultancy that puts people first. Dae.mn help people in business do 
-        better work with technology.
+        Dae.mn (pronounced Dee-mun) is a technical consultancy that puts people first. Dae.mn helps people in business do better work with technology.
     positions:
-      - designation: Senior Software Engineer (Contract)
+      - designation: Senior Software Engineer
         start: Jun 2021
         end: Jun 2022
-        responsibilities:
-         - Delivery of infrastructure as code and declarative infrastructure maintained using gitops.
-         - Delivery of ci-cd pipelines.
-         - Refining the backlog, gathering requirements.
-         - Developing the supporting services.
+        responsibilities: |
+          I delivered infrastructure as code and declarative infrastructure maintained using GitOps, and delivered CI/CD pipelines. I refined the backlog, gathered requirements, and developed the supporting services.
+        achievements:
+          - Successfully delivered infrastructure as code and CI/CD pipelines.
         skills:
-         - aws
-         - postgresql
-         - golang
-         - skaffold
-         - kustomize
-         - flux
-         - kubernetes
-         - terraform
-         - k3s
-         - react
-         - graphql
-         - docker
-         - bitbucket
-         - jira
-         - confluence
+          - aws
+          - postgresql
+          - golang
+          - skaffold
+          - kustomize
+          - flux
+          - kubernetes
+          - terraform
+          - k3s
+          - react
+          - graphql
+          - docker
+          - bitbucket
+          - jira
+          - confluence
   - company:
       name: Ve Global
       url: "http://www.ve.com/"
       location: Remote
       overview: |
-        The Company offers platform which connects digital advertising, onsite engagement, and remarketing to optimise
-        the entire customer journey and add relevancy to every online experience. Ve Global UK serves customers worldwide.
+        The Company offers a platform that connects digital advertising, onsite engagement, and remarketing to optimize the entire customer journey and add relevancy to every online experience. Ve Global UK serves customers worldwide.
     positions:
       - designation: Software Consultant
         start: Jul 2020
         end: Jun 2021
-        responsibilities:
-          - Restructuring of Ve's infrastructure and technology to save costs and create a more manageable environment.
-          - Introduce and setup local development using kustomise/skaffold/minikube.
-          - Rollout of GitOps to improve deployment pipelines.
-          - Training developers to develop best in class microservices.
+        responsibilities: |
+          I restructured Ve's infrastructure and technology to save costs and create a more manageable environment. I introduced and set up local development using Kustomize/Skaffold/Minikube, and rolled out GitOps to improve deployment pipelines. I also trained developers to develop best-in-class microservices.
+        achievements:
+          - Successfully restructured infrastructure and technology.
+          - Implemented GitOps to improve deployment pipelines.
+          - Trained developers on best practices for microservices.
         skills:
           - azure
           - kubernetes
@@ -152,24 +143,21 @@ experiences:
       url: "https://www.thermeon.com/"
       location: Remote
       overview: |
-        Thermeon Worldwide Ltd provides software solutions. The Company designs and develops car rental platform.
-        Thermeon Worldwide serves customers worldwide.
+        Thermeon Worldwide Ltd provides software solutions. The Company designs and develops car rental platforms. Thermeon Worldwide serves customers worldwide.
     positions:
       - designation: Software Engineer
         start: Jan 2018
         end: Jul 2020
-        body: |
-          At Thermeon I have worked closely with both the development and infrastructure teams which are spread all over the world.
-          I have both engineered micro services written in golang and delivered them via the Google Kubernetes Engine.
-          I have introduced operations via pull request to deliver continuous deployment, maintaining stability.
-        responsibilities:
-          - Undertake the companies first leap into Kubernetes.
-          - Working with all teams to introduce agile way of working.
-          - Work with the EU development team in an agile methodology to produce the single sign-on solution hosted in kubernetes and written in golang.
-          - Work with the US/EU teams to develop and deliver the PCI encryption micro service hosted in kubernetes and written in golang.
-          - Work with development and infrastructure teams to introduce Git-Ops using Weaveworks and various other Kubernetes tech (cert-manager, external-dns, sealed-secrets).
-          - Produce a Horizontal Pod Autoscaler for Kubernetes which uses pod readiness rather than metrics for scaling.
-          - Produce client facing website for booking rentals.
+        responsibilities: |
+          I worked closely with both the development and infrastructure teams, which are spread all over the world. I engineered microservices written in Golang and delivered them via the Google Kubernetes Engine. I introduced operations via pull requests to deliver continuous deployment, maintaining stability.
+        achievements:
+          - Undertook the company's first leap into Kubernetes.
+          - Worked with all teams to introduce an agile way of working.
+          - Developed and delivered a single sign-on solution hosted in Kubernetes and written in Golang.
+          - Developed and delivered a PCI encryption microservice hosted in Kubernetes and written in Golang.
+          - Introduced GitOps using Weaveworks and various other Kubernetes technologies (cert-manager, external-dns, sealed-secrets).
+          - Produced a Horizontal Pod Autoscaler for Kubernetes that uses pod readiness rather than metrics for scaling.
+          - Developed a client-facing website for booking rentals.
         skills:
           - github
           - circle-ci
@@ -189,19 +177,16 @@ experiences:
       url: "http://www.utilitywise.com/"
       location: Chesterfield, UK
       overview: |
-        Utilitywise PLC is an independent utility cost management consultancy company. The Company offers energy
-        procurement and energy management products and services aimed to assist customers with energy contracts,
-        reduce energy consumption and lower their carbon footprint.
+        Utilitywise PLC is an independent utility cost management consultancy company. The Company offers energy procurement and energy management products and services aimed to assist customers with energy contracts, reduce energy consumption, and lower their carbon footprint.
     positions:
       - designation: Senior Software Engineer
         start: Apr 2015
         end: Jan 2018
-        body: |
-          Working as part of a team to deliver control and automation to the Wiselife IoT product.
-        responsibilities:
-          - Development of the Wiselife IoT product
-          - Development of supporting services
-          - Development and management of data services
+        responsibilities: |
+          I worked as part of a team to deliver control and automation to the Wiselife IoT product.
+        achievements:
+          - Developed the Wiselife IoT product.
+          - Developed supporting services and data management systems.
         skills:
           - entity-framework
           - sql-server
@@ -225,16 +210,14 @@ experiences:
       url: "https://www.t-mac.co.uk/"
       location: Chesterfield, UK
       overview: |
-        t-mac provides next-generation metering, monitoring and controls solutions.
+        t-mac provides next-generation metering, monitoring, and controls solutions.
     positions:
       - designation: Software Engineer
         start: Apr 2012
         end: Apr 2015
-        body: |
-          Web applications developer working in a fully agile environment, developing monitoring, controls and analysis
-          software used throughout the energy sector. I have gathered requirements, designed, developed and delivered bespoke
-          software solutions for some of the big names in energy industry.
-        responsibilities:
+        responsibilities: |
+          I was a web applications developer working in a fully agile environment, developing monitoring, controls, and analysis software used throughout the energy sector. I gathered requirements, designed, developed, and delivered bespoke software solutions for some of the big names in the energy industry.
+        achievements:
           - Designed and developed customized energy dashboards for diverse clients, enhancing data visualization and analysis capabilities.
           - Spearheaded the creation of the tmac energy analytics platform, optimizing energy consumption insights for stakeholders.
           - Engineered data ingestion and processing services, streamlining data handling and analysis workflows for improved efficiency.
@@ -254,24 +237,16 @@ experiences:
       url: "http://www.enservegroup.com/"
       location: Leeds, UK
       overview: |
-        EnServe Group Limited provides utility infrastructure support services. The Company offers electricity
-        engineering, civil asset management, installation, analysis, and water network support services.
-        EnServe Group serves gas, electricity, and water distribution and retail companies globally.
+        EnServe Group Limited provides utility infrastructure support services. The Company offers electricity engineering, civil asset management, installation, analysis, and water network support services. EnServe Group serves gas, electricity, and water distribution and retail companies globally.
     positions:
       - designation: Software Engineer
         start: Sep 2010
         end: Apr 2012
-        body: |
-          Under the direction of Richard Marr (Senior Lead Developer).
-        responsibilities:
-          - Development and maintenance of Job Track Enterprise (JTE) for H2O Water Services Ltd and Thames Water /Veolia Water.
-          - Full involvement in maintenance and in ongoing development of the JTE system for H2O, including Smartclient application,
-            website, web services, mobile devices database and SSIS packages.
-          - Full involvement in development of the JTE system for Thames Water in the run-up to live deployment, including all
-            of the above elements plus integration with the IBM Websphere messaging system for near real-time integration with
-            the Insight TMA system.
-          - Full involvement in interpretation of new requirements for both JTE systems in consultation with others both
-            internal and external, technical and non-technical.
+        responsibilities: |
+          I worked under the direction of Richard Marr (Senior Lead Developer) on the development and maintenance of Job Track Enterprise (JTE) for H2O Water Services Ltd and Thames Water / Veolia Water. I was fully involved in the maintenance and ongoing development of the JTE system for H2O, including the Smartclient application, website, web services, mobile devices database, and SSIS packages. I was also fully involved in the development of the JTE system for Thames Water in the run-up to live deployment, including all of the above elements plus integration with the IBM Websphere messaging system for near real-time integration with the Insight TMA system. Additionally, I interpreted new requirements for both JTE systems in consultation with internal and external stakeholders.
+        achievements:
+          - Developed and maintained the JTE system for H2O and Thames Water.
+          - Integrated the JTE system with IBM Websphere for near real-time data processing.
         skills:
           - soap
           - csharp
@@ -283,23 +258,15 @@ experiences:
       url: "http://www.cse-global.com/"
       location: Eckington, UK
       overview: |
-        Cse-Healthcare Systems Ltd. provides clinical information and patient administration systems.
-        The Company offers project management, training, product consultancy, configuration, technical consultancy, and
-        help desk services. Cse-Healthcare Systems develops its enterprise-wide systems for implementation across both
-        community and hospital based services.
+        Cse-Healthcare Systems Ltd. provides clinical information and patient administration systems. The Company offers project management, training, product consultancy, configuration, technical consultancy, and help desk services. Cse-Healthcare Systems develops its enterprise-wide systems for implementation across both community and hospital-based services.
     positions:
       - designation: Student Software Engineer
         start: Jun 2008
         end: Sep 2009
-        responsibilities:
-         - Maintaining product specialist’s demo laptop builds of RiO
-         - Development / Maintenance of internal tools used by all areas of CSE-healthcare systems
-         - Working as part of the live service team investigating software issues. Issuing hot fixes and releases.
-         - Working as part of the testing team testing software modules. Identifying code paths and testing plans.
-         - Design and created the replacement correspondence reference system which is used company wide (CSE-Global(UK) Ltd).
-         - Design and created a testing automation framework. I created a framework that automated web pages from the user
-           point of view. I made the framework very flexible and reusable and created documentation that allowed a novice to
-           quickly create tests and reuse code that has previously been created.
+        responsibilities: |
+          I maintained product specialist’s demo laptop builds of RiO and developed and maintained internal tools used by all areas of CSE-healthcare systems. I worked as part of the live service team investigating software issues, issuing hot fixes and releases, and as part of the testing team, testing software modules, identifying code paths, and creating testing plans. I also designed and created the replacement correspondence reference system, which is used company-wide, and a testing automation framework that automated web pages from the user point of view.
+        achievements:
+          - Designed and created a testing automation framework that was flexible, reusable, and well-documented.
         skills:
           - csharp
           - sql-server

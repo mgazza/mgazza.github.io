@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>{{(index site.Data site.Language.Lang).author.name}} Resume</title>
 
     <!------ ADD PAGE SPECIFIC HEADERS ------->
@@ -8,15 +8,15 @@
 
     <!-- ADD GOOGLE ANALYTICS IF ENABLED -->
     {{ if site.GoogleAnalytics }}
-      {{ template "_internal/google_analytics.html" . }}
+    {{ template "_internal/google_analytics.html" . }}
     {{ end }}
-  </head>
+</head>
 
-  <body>
-    <!----- ADD PAGE CONTENT --------->
-    {{ block "content" . }} {{ end }}
+<body>
+<!----- ADD PAGE CONTENT --------->
+{{ block "content" . }} {{ end }}
 
-    <!------- ADD COMMON SCRIPTS ------->
-    {{ partial "cv/scripts.html" . }}
-  </body>
+<!------- ADD COMMON SCRIPTS ------->
+{{ partial "cv/scripts.html" . }}
+</body>
 </html>

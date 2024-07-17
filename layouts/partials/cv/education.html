@@ -1,8 +1,16 @@
-<div id="education" class="container text-center">
-    <h3>Education</h3>
+<div class="resume-section">
+    <div class="title">Education</div>
     {{ range (index site.Data site.Language.Lang).sections.education.degrees }}
-    <h4>{{ .institution.name }}</h4>
-    <p>{{ .name }}</p>
-    <p>{{ .timeframe }}</p>
-    {{ end }}
+    <div class="item">
+        <div class="item-subheader text-muted">
+            <h5>{{ .institution.name }}</h5>
+        </div>
+        <div class="item-subheader">
+            <h5>{{ .name }}</h5>
+            <span>{{ .timeframe }}</span>
+        </div>
+        <div class="item-details">
+        </div>
+    </div>
+    {{end}}
 </div>

@@ -1,21 +1,81 @@
-$primary-color: #1F9BD7;
-$secondary-color: #FFFFFF;
-$accent1-color: #093C7D;
-
-
-@font-face {
-  font-family: "Comfortaa";
-  src: url("/fonts/Comfortaa-Bold-Alt1.otf");
-}
-
 @font-face {
   font-family: "OpenSans";
   src: url("/fonts/OpenSans-Regular.ttf");
 }
 
-$primary-font: 'Comfortaa';
-$secondary-font: 'OpenSans';
+body {
+  font-family: 'OpenSans', sans-serif;
+}
 
+.resume-header {
+  text-align: center;
+}
+
+.resume-header h1 {
+  margin: 0;
+}
+
+.resume-header p {
+  margin: 5px 0;
+}
+
+.resume-header ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.resume-header ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.resume-header ul li:not(:last-child)::after {
+  content: "•";
+  margin-left: 10px;
+}
+
+.resume-section {
+  margin-bottom: 20px;
+}
+
+.resume-section .title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 6px;
+}
+
+.item {
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.item:nth-child(odd) {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.item-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.responsibilities-details ul,
+.achievements-details ul,
+.skills-details ul {
+  padding-left: 20px;
+}
+
+.skills-details li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.skills-details li:not(:last-child)::after {
+  content: "|";
+  margin-left: 10px;
+}
 
 @import "bootstrap.min";
-@import "main";

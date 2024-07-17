@@ -1,52 +1,56 @@
-<div id="experience" class="container">
-    <h3 class="text-center">Experience</h3>
+<div class="resume-section">
+    <div class="title">Experience</div>
     {{ range (index site.Data site.Language.Lang).sections.experiences.experiences }}
-    {{ $co:= .company}}
-    <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-3">
-            <h4>{{ $co.name }}</h4>
-        </div>
-    </div>
+    {{ $co := .company }}
     {{ range .positions }}
-    <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-3">
-            <p class="text-muted">{{ .designation }}</p>
-            <p class="text-muted font-italic">{{ .start }} - {{ if .end }}{{ .end }}{{ else }}Present{{ end }}</p>
+    <div class="item">
+        <div class="item-subheader text-muted">
+            <h5>{{ $co.name }}</h5>
+            <span>{{ $co.location }}</span>
         </div>
-        <div class="col-xs-12 col-sm-8 col-md-9">
-            <p>
-            <ul>{{ range .responsibilities }}
-            <li>{{.}}</li>
-
-            {{end}}</ul>
-            </p>
-
+        <div class="item-subheader">
+            <h5>{{ .designation }}</h5>
+            <span>{{ .start }} - {{ if .end }}{{ .end }}{{ else }}Present{{ end }}</span>
         </div>
-    </div>
-    <div class="row skill-row">
-        <div class="col-xs-12 col-sm-4 col-md-3">
-            <p class="text-muted text-sm-right">Skills</p>
-        </div>
-        <div class="col-xs-12 col-sm-8 col-md-9 text-center text-md-left">
-            <p>
-                {{ range .skills }}
-                {{ $allSkills := (index site.Data site.Language.Lang).sections.skills.skills  }}
-                {{  $skills :=  where $allSkills "name" . }}
-                {{ if gt (len $skills) 0 }}
-                {{ range first 1 $skills }}
-                {{ $logoImage := resources.Get .logo }}
-                <a href="{{ .url }}" title="{{ .name }}" class="skill">
-                    <img class="no-print" alt="{{ .name }}" src="{{ $logoImage.RelPermalink }}"/>
-                    <span class="print">{{ .name }}</span>
-                </a>
-                {{ end }}
-
+        <div class="item-details">
+            {{ if .responsibilities }}
+            <div class="responsibilities-header h6">Responsibilities</div>
+            <div class="responsibilities-details">
+                {{ if reflect.IsSlice .responsibilities }}
+                <ul>
+                    {{ range .responsibilities }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
                 {{ else }}
-                {{.}}
+                {{ .responsibilities | markdownify }}
                 {{ end }}
-
-                {{ end }}
-            </p>
+            </div>
+            {{ end }}
+        </div>
+        <div class="achievements-details">
+            {{ if .achievements }}
+            <div class="achievements-header h6">Achievements</div>
+            <div class="achievements-details">
+                <ul>
+                    {{ range .achievements }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        </div>
+        <div class="skills-details">
+            {{ if .skills }}
+            <div class="skills-header h6">Skills</div>
+            <div class="skills-details">
+                <ul class="list-inline">
+                    {{ range .skills }}
+                    <li class="list-inline-item">{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
         </div>
     </div>
     {{ end }}
