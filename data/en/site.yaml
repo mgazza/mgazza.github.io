@@ -8,7 +8,7 @@ description: Portfolio and personal blog of Mark Gascoyne.
 # they will be separated by a divider from the main menus.
 customMenus:
 - name: CV
-  url: /cv
+  url: /files/cv.pdf
   # specify whether to hide the menu item from top navbar or not.
   hideFromNavbar: false
   # specify whether to show the menu item in footer or not.
