@@ -59,7 +59,7 @@ jobs:
         docker run \
         --network container:http \
         -v ${{ github.workspace }}:/usr/src/app \
-        zenika/alpine-chrome:102 --no-sandbox --no-pdf-header-footer --print-to-pdf=public/files/cv.pdf --hide-scrollbars \
+        zenika/alpine-chrome:124 --no-sandbox --no-pdf-header-footer --print-to-pdf=public/files/cv.pdf --hide-scrollbars \
         http://http/cv
     - name: Stop Http
       run: docker-compose -f "docker-compose.yml" down
