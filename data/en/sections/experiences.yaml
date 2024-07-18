@@ -53,7 +53,7 @@ experiences:
         responsibilities: |
           I aligned all DevOps teams with the unified GitOps deployment strategy, and created and implemented a unified GitOps deployment strategy for DevOps. I assisted team members with the use of unified GitOps deployments and local development environments, and facilitated the transition between manifest management tooling.
         achievements:
-          - Assisted in creating a common shared understanding of all team’s GitOps within the SRE function.
+          - Assisted in creating a common shared understanding of all team's GitOps within the SRE function.
         skills:
           - aws
           - golang
