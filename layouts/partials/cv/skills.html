@@ -1,12 +1,26 @@
 <div class="resume-section">
     <div class="title">Skills</div>
     <div class="skills-details">
-    <ul class="list-inline">
+        {{ $categories := slice }}
         {{ range (index site.Data site.Language.Lang).sections.skills.skills }}
-        {{ if not .hideFromCV }}
-        <li class="list-inline-item">{{ .name }}&nbsp;</li>
+        {{ if not (in $categories .cat) }}
+        {{ $categories = $categories | append .cat }}
         {{ end }}
         {{ end }}
-    </ul>
+
+        {{ range $category := $categories }}
+        <div class="skill-category">
+            <div class="h6">{{ $category }}</div>
+            <ul class="list-inline">
+                {{ range (index site.Data site.Language.Lang).sections.skills.skills }}
+                {{ if eq .cat $category }}
+                {{ if not .hideFromCV }}
+                <li class="list-inline-item">{{ .title }}&nbsp;</li>
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
     </div>
 </div>

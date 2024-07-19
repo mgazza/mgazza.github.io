@@ -9,22 +9,22 @@ section:
   # hideTitle: true
 
 # Your Skills.
-# Give a summary of each skill in the summary section.
+# Give a summary of you each skill in the summary section.
 skills:
   - name: kubernetes
     title: Kubernetes
     logo: "/images/sections/skills/kubernetes.png"
     summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
     url: https://kubernetes.io/
-    cat: orchestration-tools
+    cat: DevOps & Orchestration
     showOnMain: true
   - name: golang
-    title: Go Development
+    title: Golang
     showOnMain: true
     summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable programs."
     logo: "/images/sections/skills/golang.svg"
     url: https://golang.org/
-    cat: programming-languages
+    cat: Programming Languages
   - name: cloud
     title: Cloud Computing
     logo: "/images/sections/skills/cloud.png"
@@ -35,249 +35,279 @@ skills:
     title: Helm
     logo: "/images/sections/skills/helm.svg"
     url: https://helm.sh/
-    cat: orchestration-tools
+    cat: DevOps & Orchestration
   - name: flux
     title: Flux
     logo: "/images/sections/skills/flux.png"
     url: https://www.weave.works/oss/flux/
-    cat: orchestration-tools
+    cat: DevOps & Orchestration
   - name: skaffold
     title: Skaffold
     logo: "/images/sections/skills/skaffold.jpg"
     url: https://skaffold.dev/
-    cat: orchestration-tools
+    cat: DevOps & Orchestration
   - name: kustomize
     title: Kustomize
     logo: "/images/sections/skills/kustomize.png"
     url: https://kustomize.io/
-    cat: orchestration-tools
+    cat: DevOps & Orchestration
   - name: github
     title: GitHub
     logo: "/images/sections/skills/github.png"
     url: https://github.com/
-    cat: version-control
+    cat: Tools & Frameworks
   - name: git
     title: Git
     logo: "/images/sections/skills/git.png"
     url: https://git-scm.com/
-    cat: version-control
+    cat: Tools & Frameworks
   - name: circle-ci
     title: Circle CI
     logo: "/images/sections/skills/circle-ci.png"
     url: https://www.circleci.com/
-    cat: ci-cd
+    cat: Tools & Frameworks
   - name: vuejs
-    title: Vue.js
+    title: Vue js
     logo: "/images/sections/skills/vuejs.png"
     url: https://vuejs.org/
-    cat: frontend-frameworks
+    cat: Web & Frontend Development
   - name: swagger
     title: Swagger
     logo: "/images/sections/skills/swagger.png"
     url: https://swagger.io/
-    cat: web-development
+    cat: Web & Frontend Development
   - name: rest
-    title: REST
+    title: Rest
     logo: "/images/sections/skills/rest.png"
     url: https://restfulapi.net/
-    cat: web-development
+    cat: Web & Frontend Development
   - name: dotnet
-    title: .NET
+    title: .Net
     logo: "/images/sections/skills/dotnet.png"
     url: https://dotnet.microsoft.com/
-    cat: programming-languages
+    cat: Programming Languages
   - name: sql-server
-    title: SQL Server
+    title: Sql Server
     logo: "/images/sections/skills/sql-server.svg"
     url: https://www.microsoft.com/en-in/sql-server/sql-server-2019
-    cat: databases
+    cat: Databases & Messaging
   - name: csharp
-    title: C#
+    title: CSharp
     logo: "/images/sections/skills/csharp.png"
     url: https://docs.microsoft.com/en-us/dotnet/csharp/
-    cat: programming-languages
+    cat: Programming Languages
   - name: vbdotnet
-    title: VB.NET
+    title: VB.Net
     logo: "/images/sections/skills/vbdotnet.jpg"
     url: https://docs.microsoft.com/en-us/dotnet/visual-basic/
-    cat: programming-languages
+    cat: Programming Languages
   - name: z-wave
-    title: Z-Wave
+    title: Z Wave
     logo: "/images/sections/skills/zwave.png"
     url: https://www.z-wave.com/
-    cat: protocols
+    cat: Tools & Frameworks
   - name: google-cloud
     title: Google Cloud
     logo: "/images/sections/skills/google-cloud.png"
     url: https://cloud.google.com/
-    cat: cloud-platforms
+    cat: Cloud Platforms
   - name: docker
     title: Docker
     logo: "/images/sections/skills/docker.png"
     url: https://www.docker.com/
-    cat: containerisation
+    cat: DevOps & Orchestration
   - name: linux
     title: Linux
     logo: "/images/sections/skills/linux.png"
     url: https://www.linux.org/
-    cat: operating-systems
+    cat: DevOps & Orchestration
   - name: cassandra
     title: Cassandra
     logo: "/images/sections/skills/cassandra.png"
     url: https://cassandra.apache.org/
-    cat: databases
+    cat: Databases & Messaging
   - name: entity-framework
     title: Entity Framework
     logo: "/images/sections/skills/entityframework.png"
     url: https://docs.microsoft.com/en-us/ef/
-    cat: orm-frameworks
+    cat: Databases & Messaging
   - name: modbus
     title: Modbus
     logo: "/images/sections/skills/modbus.png"
     url: http://www.modbus.org/
-    cat: protocols
+    cat: Tools & Frameworks
   - name: scala
     title: Scala
     logo: "/images/sections/skills/scala.png"
     url: https://www.scala-lang.org/
-    cat: programming-languages
+    cat: Programming Languages
   - name: nodejs
-    title: Node.js
+    title: Node js
     logo: "/images/sections/skills/nodejs.svg"
     url: https://nodejs.org/
-    cat: programming-languages
+    cat: Programming Languages
   - name: tfs
     title: TFS
     logo: "/images/sections/skills/tfs.jpg"
     url: https://azure.microsoft.com/en-gb/services/devops/server/
-    cat: version-control
+    cat: Tools & Frameworks
   - name: signalR
-    title: SignalR
+    title: Signalr
     logo: "/images/sections/skills/signalr.svg"
     url: https://dotnet.microsoft.com/apps/aspnet/signalr
-    cat: realtime-frameworks
+    cat: Web & Frontend Development
   - name: redis
     title: Redis
     logo: "/images/sections/skills/redis.png"
     url: https://redis.io/
-    cat: databases
+    cat: Databases & Messaging
   - name: azure
     title: Azure
     logo: "/images/sections/skills/azure.svg"
     url: https://azure.microsoft.com/en-gb/
-    cat: cloud-platforms
+    cat: Cloud Platforms
   - name: aws
     title: AWS
     logo: "/images/sections/skills/aws.svg"
     url: https://aws.amazon.com
-    cat: cloud-platforms
+    cat: Cloud Platforms
   - name: mvc
     title: MVC
     logo: "/images/sections/skills/mvc.jpg"
     url: https://dotnet.microsoft.com/apps/aspnet/mvc
-    cat: frameworks
+    cat: Tools & Frameworks
   - name: java
     title: Java
     logo: "/images/sections/skills/java.svg"
     url: https://www.java.com/
-    cat: programming-languages
+    cat: Programming Languages
   - name: spring
     title: Spring
     logo: "/images/sections/skills/spring.svg"
     url: https://spring.io/
-    cat: frameworks
+    cat: Tools & Frameworks
   - name: jquery
-    title: jQuery
+    title: JQuery
     logo: "/images/sections/skills/jquery.svg"
     url: https://jquery.com/
-    cat: frontend-frameworks
+    cat: Web & Frontend Development
   - name: knockout
     title: Knockout
     logo: "/images/sections/skills/knockout.png"
     url: https://knockoutjs.com/
-    cat: frontend-frameworks
+    cat: Web & Frontend Development
   - name: backbone
-    title: Backbone.js
+    title: Backbone js
     logo: "/images/sections/skills/backbone.png"
     url: https://backbonejs.org/
-    cat: frontend-frameworks
+    cat: Web & Frontend Development
   - name: highcharts
     title: Highcharts
     logo: "/images/sections/skills/highcharts.svg"
     url: https://highcharts.com/
-    cat: data-visualisation
+    cat: Web & Frontend Development
   - name: ssas
     title: Microsoft SSAS
     logo: "/images/sections/skills/ssas.png"
     url: https://docs.microsoft.com/en-us/analysis-services/
-    cat: databases
+    cat: Databases & Messaging
   - name: soap
-    title: SOAP
+    title: Soap
     logo: "/images/sections/skills/soap.png"
     url: https://en.wikipedia.org/wiki/SOAP
-    cat: web-development
+    cat: Web & Frontend Development
   - name: ssis
     title: SQL Server Integration Services
     logo: "/images/sections/skills/ssis.jpg"
     url: https://docs.microsoft.com/en-us/sql/integration-services/
-    cat: databases
+    cat: Databases & Messaging
   - name: kafka
     title: Apache Kafka
     logo: "/images/sections/skills/kafka.svg"
     url: https://kafka.apache.org/
-    cat: messaging
+    cat: Databases & Messaging
   - name: confluence
     title: Confluence
     logo: "/images/sections/skills/confluence.svg"
-    url: https://confluence.atlassian.com/
-    cat: management-tools
-  - name: jira
-    title: Jira
-    logo: "/images/sections/skills/jira.svg"
-    url: https://www.atlassian.com/software/jira
-    cat: management-tools
-  - name: bitbucket
-    title: BitBucket
-    logo: "/images/sections/skills/bitbucket.svg"
-    url: https://bitbucket.org/
-    cat: version-control
-  - name: postgresql
-    title: PostgreSQL
-    logo: "/images/sections/skills/postgresql.svg"
-    url: https://www.postgresql.org/
-    cat: databases
-  - name: react
-    title: React
-    logo: "/images/sections/skills/react.svg"
-    url: https://reactjs.org/
-    cat: frontend-frameworks
+    url: https://www.atlassian.com/software/confluence
+    cat: Tools & Frameworks
   - name: terraform
     title: Terraform
     logo: "/images/sections/skills/terraform.svg"
     url: https://www.terraform.io/
-    cat: infrastructure-as-code
+    cat: DevOps & Orchestration
+  - name: argo
+    title: Argo
+    logo: "/images/sections/skills/argo.png"
+    url: https://argoproj.github.io/
+    cat: DevOps & Orchestration
   - name: k3s
-    title: K3s
-    logo: "/images/sections/skills/k3s.svg"
+    title: K3S
+    logo: "/images/sections/skills/k3s.png"
     url: https://k3s.io/
-    cat: orchestration-tools
+    cat: DevOps & Orchestration
   - name: confluent-cloud
     title: Confluent Cloud
     logo: "/images/sections/skills/confluent-cloud.png"
-    url: https://www.confluent.io/
-    cat: cloud-platforms
-  - name: graphql
-    title: GraphQL
-    logo: "/images/sections/skills/graphql.svg"
-    url: https://graphql.org/
-    cat: web-development
-  - name: argocd
-    title: Argo CD
-    logo: "/images/sections/skills/argo-stacked-color.svg"
-    url: https://github.com/argoproj/argo-cd
-    cat: orchestration-tools
+    url: https://www.confluent.io/confluent-cloud/
+    cat: Cloud Platforms
   - name: gitlab
     title: GitLab
     logo: "/images/sections/skills/gitlab-logo-100.svg"
-    url: https://gitlab.com/
-    cat: version-control
+    url: https://about.gitlab.com/
+    cat: Tools & Frameworks
+  - name: bitbucket
+    title: BitBucket
+    logo: "/images/sections/skills/bitbucket.png"
+    url: https://bitbucket.org/
+    cat: Tools & Frameworks
+  - name: jira
+    title: Jira
+    logo: "/images/sections/skills/jira.png"
+    url: https://www.atlassian.com/software/jira
+    cat: Tools & Frameworks
+  - name: prometheus
+    title: Prometheus
+    logo: "/images/sections/skills/prometheus.png"
+    url: https://prometheus.io/
+    cat: Monitoring & Observability
+  - name: grafana
+    title: Grafana
+    logo: "/images/sections/skills/grafana.png"
+    url: https://grafana.com/
+    cat: Monitoring & Observability
+  - name: thanos
+    title: Thanos
+    logo: "/images/sections/skills/thanos.png"
+    url: https://thanos.io/
+    cat: Monitoring & Observability
+  - name: loki
+    title: Loki
+    logo: "/images/sections/skills/loki.png"
+    url: https://grafana.com/oss/loki/
+    cat: Monitoring & Observability
+  - name: nats
+    title: NATS
+    logo: "/images/sections/skills/nats.png"
+    url: https://nats.io/
+    cat: Databases & Messaging
+  - name: bash
+    title: Bash
+    logo: "/images/sections/skills/bash.svg"
+    url: https://www.gnu.org/software/bash/
+    cat: Programming Languages
+  - name: python
+    title: Python
+    logo: "/images/sections/skills/python.svg"
+    url: https://www.python.org/
+    cat: Programming Languages
+  - name: oci
+    title: Oracle Cloud Infrastructure
+    logo: "/images/sections/skills/oci.svg"
+    url: https://www.oracle.com/cloud
+    cat: Cloud Platforms
+  - name: postgresql
+    title: PostgreSQL
+    logo: "/images/sections/skills/postgresql.svg"
+    url: https://www.postgresql.org/
+    cat: Databases & Messaging
