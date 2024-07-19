@@ -17,7 +17,7 @@ experiences:
       overview: |
         Vitrifi is revolutionising the Telco industry by providing lightweight software solutions to ISP's.
     positions:
-      - designation: Network Services Lead
+      - designation: Network Systems Lead
         start: Jun 2023
         responsibilities: |
           I provide technical expertise to help design scalable and maintainable software architectures. I review code submissions from team members to ensure adherence to coding standards, best practices, and quality. Additionally, I assign tasks and responsibilities to team members based on their skills and project requirements, and collaborate with product managers to create project plans, set milestones, and estimate timelines. I monitor the team's progress, identify bottlenecks, and take corrective actions to ensure project goals are met. I support team members in their professional growth, helping them acquire new skills and providing guidance on career paths.
@@ -40,6 +40,7 @@ experiences:
           - Identified areas for process improvement and implemented changes to enhance team productivity and software quality.
         skills:
           - aws
+          - oci
           - golang
           - kustomize
           - argocd
@@ -47,6 +48,9 @@ experiences:
           - kubernetes
           - docker
           - gitlab
+          - bash
+          - terraform
+          - python
       - designation: Gitops Consultant
         start: Dec 2022
         end: Jun 2023
@@ -64,6 +68,8 @@ experiences:
           - kubernetes
           - docker
           - gitlab
+          - bash
+          - terraform
       - designation: Senior Go Developer
         start: Jun 2022
         end: Dec 2022
@@ -81,6 +87,8 @@ experiences:
           - kubernetes
           - docker
           - gitlab
+          - bash
+          - terraform
   - company:
       name: Dae.mn/ Kultralab
       url: "https://dae.mn/"
@@ -111,6 +119,8 @@ experiences:
           - bitbucket
           - jira
           - confluence
+          - bash
+          - terraform
   - company:
       name: Ve Global
       url: "http://www.ve.com/"
@@ -138,6 +148,7 @@ experiences:
           - golang
           - docker
           - flux
+          - bash
   - company:
       name: Thermeon Worldwide Ltd
       url: "https://www.thermeon.com/"
@@ -172,6 +183,7 @@ experiences:
           - cassandra
           - swagger
           - rest
+          - bash
   - company:
       name: Utilitywise PLC
       url: "http://www.utilitywise.com/"
