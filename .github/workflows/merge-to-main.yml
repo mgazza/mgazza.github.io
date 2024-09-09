@@ -36,7 +36,7 @@ jobs:
       run: hugo --minify
     # Hosts the html using docker/nginx
     - name: Bring up nginx
-      run: docker-compose -f "docker-compose.yml" up -d && docker-compose start http
+      run: docker compose -f "docker-compose.yml" up -d && docker compose start http
     - name: Wait for nginx
       run: |
         attempt_counter=0
