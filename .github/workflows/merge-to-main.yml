@@ -62,7 +62,7 @@ jobs:
         zenika/alpine-chrome:124 --no-sandbox --no-pdf-header-footer --print-to-pdf=public/files/cv.pdf --hide-scrollbars \
         http://http/cv
     - name: Stop Http
-      run: docker-compose -f "docker-compose.yml" down
+      run: docker compose -f "docker-compose.yml" down
     # push the generated content into the `gh-pages` branch.
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.9.3
