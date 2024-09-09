@@ -17,27 +17,18 @@ experiences:
       overview: |
         Vitrifi is revolutionising the Telco industry by providing lightweight software solutions to ISP's.
     positions:
-      - designation: Network Systems Lead
+      - designation: Network Systems (Lead Software Engineer)
         start: Jun 2023
         responsibilities: |
-          I provide technical expertise to help design scalable and maintainable software architectures. I review code submissions from team members to ensure adherence to coding standards, best practices, and quality. Additionally, I assign tasks and responsibilities to team members based on their skills and project requirements, and collaborate with product managers to create project plans, set milestones, and estimate timelines. I monitor the team's progress, identify bottlenecks, and take corrective actions to ensure project goals are met. I support team members in their professional growth, helping them acquire new skills and providing guidance on career paths.
+          I lead the design and implementation of scalable software architectures while contributing hands-on to critical 
+          software development. I review code submissions from team members to ensure adherence to coding standards and 
+          quality. I also manage project timelines and collaborate with product managers to align technical and business 
+          objectives.
         achievements:
-          - Promoted knowledge sharing within the team to foster a culture of learning and continuous improvement.
-          - Facilitated communication within the team, ensuring alignment on project goals and tasks.
-          - Represented the team in meetings with stakeholders, providing updates on project status and addressing concerns.
-          - Ensured appropriate testing processes were followed, and that the software met quality standards.
-          - Prioritized and managed bug reports, collaborating with the team to resolve issues efficiently.
-          - Addressed conflicts or issues within the team, promoting a healthy and productive work environment.
-          - Escalated critical issues to upper management when necessary.
-          - Participated in the recruitment process, conducting interviews, and helping to build a strong team.
-          - Fostered a collaborative and inclusive team culture that encourages creativity and innovation.
-          - Ensured that technical documentation was up to date and readily accessible to team members.
-          - Identified potential risks to project delivery and took proactive measures to mitigate them.
-          - Kept up-to-date with industry trends and evaluated new technologies to improve the team's efficiency and the quality of the software.
-          - Managed the team's budget and resources effectively, ensuring optimal allocation to meet project goals.
-          - Conducted performance reviews and provided constructive feedback to team members.
-          - Ensured the team followed company policies, including security and compliance standards.
-          - Identified areas for process improvement and implemented changes to enhance team productivity and software quality.
+          - Architected and developed key components such as Kubernetes operators using Golang.
+          - Led the development of automation tools for deployment pipelines.
+          - Ensured technical documentation was up-to-date and accessible.
+          - Promoted knowledge sharing and upskilling within the team and wider business.
         skills:
           - aws
           - oci
@@ -51,13 +42,17 @@ experiences:
           - bash
           - terraform
           - python
-      - designation: Gitops Consultant
+      - designation: GitOps Consultant (Software Engineer)
         start: Dec 2022
         end: Jun 2023
         responsibilities: |
-          I aligned all DevOps teams with the unified GitOps deployment strategy, and created and implemented a unified GitOps deployment strategy for DevOps. I assisted team members with the use of unified GitOps deployments and local development environments, and facilitated the transition between manifest management tooling.
+          I implemented GitOps strategies for the organization and contributed to the development of custom tools 
+          designed to integrate with GitLab CI. I also adapted and extended an existing library of internal tools to 
+          fit the unique requirements of the business, enhancing deployment automation and efficiency.
         achievements:
-          - Assisted in creating a common shared understanding of all team's GitOps within the SRE function.
+          - Implemented GitOps across multiple environments, automating deployment pipelines using GitLab CI.
+          - Developed and customized tooling to streamline GitOps workflows, including writing new tools from scratch to meet specific business needs.
+          - Enhanced deployment reliability and scalability by integrating custom tools with existing infrastructure.
         skills:
           - aws
           - golang
