@@ -1,5 +1,5 @@
 {{ define "header" }}
-{{ $cv := resources.Get "cv/cv.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+{{ $cv := resources.Get "cv/cv.scss" | css.Sass (dict "outputStyle" "compressed") | fingerprint }}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <link rel="stylesheet" href="{{ $cv.Permalink }}"/>
 {{ end }}
