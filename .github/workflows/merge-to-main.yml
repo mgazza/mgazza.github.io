@@ -56,6 +56,7 @@ jobs:
     - name: Generate the pdf
       run: |
         rm -f public/files/cv.pdf
+        sudo chmod -R 777 public/files
         docker run \
         --network container:http \
         -v ${{ github.workspace }}:/usr/src/app \
