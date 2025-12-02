@@ -2,7 +2,7 @@
 section:
   name: Projects
   id: projects
-  enable: false
+  enable: true
   weight: 4
   showOnNavbar: true
   # Can optionally hide the title in sections
@@ -14,7 +14,58 @@ buttons:
     filter: "all"
   - name: Professional
     filter: "professional"
-  - name: Academic
-    filter: "academic"
-  - name: Hobby
-    filter: "hobby"
+  - name: Side Projects
+    filter: "side-project"
+
+# your projects
+projects:
+  - name: PredBat SaaS Platform
+    logo: /images/sections/projects/predbat.png
+    role: Lead Engineer (SaaS Platform)
+    timeline: "Feb 2025 - Present"
+    summary: Multi-tenant Kubernetes-based SaaS platform for home battery optimization, serving paying customers in production.
+    tags: ["professional", "side-project"]
+    description: |
+      Architected and developed the complete SaaS infrastructure and frontend for a home battery optimization
+      platform. Built a production-ready multi-tenant system that enables customers to optimize their battery
+      storage by integrating with multiple UK energy providers and inverter types.
+
+      **My Technical Contributions:**
+      - Multi-tenant Kubernetes deployment on Civo cloud with per-customer namespace isolation
+      - GitOps workflow using Flux and Kustomize for automated deployments
+      - React + TypeScript dashboard with real-time WebSocket data visualization (Recharts)
+      - Supabase integration for authentication and data management
+      - Terraform infrastructure as code for reproducible environments
+      - Paddle payment integration for subscription management
+      - Grafana Alloy for monitoring and observability
+      - Integration with UK energy provider APIs (Octopus Energy, So Energy, EDF, E.ON)
+
+      **Key Achievements:**
+      - Architected and deployed production SaaS infrastructure serving paying customers
+      - Built 8-wave progressive rollout system for safe feature deployment
+      - Delivered 838+ commits across infrastructure and frontend repositories
+      - Implemented per-customer resource isolation and automated provisioning
+      - Created customer lifecycle management automation (onboarding, pause, deletion)
+
+  - name: Kubernetes Operators Suite
+    logo: /images/sections/projects/kubernetes.png
+    role: Lead Developer
+    timeline: "2022 - Present"
+    summary: Custom Kubernetes operators for automating complex application deployments and lifecycle management.
+    tags: ["professional"]
+    description: |
+      Developed multiple production-grade Kubernetes operators including Kafka Connect and KSQL operators
+      with custom CRDs and reconciliation loops. These operators automate deployment, configuration, and
+      lifecycle management of complex distributed systems.
+
+  - name: Energy Management APIs
+    logo: /images/sections/projects/golang.png
+    role: Developer
+    timeline: "2024 - Present"
+    repo: https://github.com/mgazza
+    summary: Go client libraries for UK energy platform APIs, enabling smart home automation and battery optimization.
+    tags: ["side-project"]
+    description: |
+      Created Go client libraries (73,000+ lines of code) for integrating with UK energy providers
+      including Octopus Energy, GivEnergy, and Solis. Developed SmaliSwagger, an innovative tool for
+      reverse-engineering APIs from Android APK files to enable integration where public APIs don't exist.

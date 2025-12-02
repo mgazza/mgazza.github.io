@@ -41,6 +41,13 @@ skills:
     logo: "/images/sections/skills/flux.png"
     url: https://www.weave.works/oss/flux/
     cat: DevOps & Orchestration
+  - name: argocd
+    title: ArgoCD
+    logo: "/images/sections/skills/argocd.png"
+    summary: "Experienced with GitOps deployment strategies using ArgoCD for automated application delivery."
+    url: https://argo-cd.readthedocs.io/
+    cat: DevOps & Orchestration
+    showOnMain: true
   - name: skaffold
     title: Skaffold
     logo: "/images/sections/skills/skaffold.jpg"
@@ -71,6 +78,20 @@ skills:
     logo: "/images/sections/skills/vuejs.png"
     url: https://vuejs.org/
     cat: Web & Frontend Development
+  - name: react
+    title: React
+    logo: "/images/sections/skills/react.png"
+    summary: "Proficient in building modern web applications with React, including hooks, context, and state management."
+    url: https://reactjs.org/
+    cat: Web & Frontend Development
+    showOnMain: true
+  - name: typescript
+    title: TypeScript
+    logo: "/images/sections/skills/typescript.png"
+    summary: "Strong experience with TypeScript for type-safe application development."
+    url: https://www.typescriptlang.org/
+    cat: Programming Languages
+    showOnMain: true
   - name: swagger
     title: Swagger
     logo: "/images/sections/skills/swagger.png"
