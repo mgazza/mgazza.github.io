@@ -20,15 +20,17 @@ experiences:
       - designation: Network Systems (Lead Software Engineer)
         start: Jun 2023
         responsibilities: |
-          I lead the design and implementation of scalable software architectures while contributing hands-on to critical 
-          software development. I review code submissions from team members to ensure adherence to coding standards and 
-          quality. I also manage project timelines and collaborate with product managers to align technical and business 
+          I lead the design and implementation of scalable software architectures while contributing hands-on to critical
+          software development. I review code submissions from team members to ensure adherence to coding standards and
+          quality. I also manage project timelines and collaborate with product managers to align technical and business
           objectives.
         achievements:
-          - Architected and developed key components such as Kubernetes operators using Golang.
-          - Led the development of automation tools for deployment pipelines.
-          - Ensured technical documentation was up-to-date and accessible.
-          - Promoted knowledge sharing and upskilling within the team and wider business.
+          - Architected and developed 5+ production-grade Kubernetes operators using Golang for network service lifecycle management.
+          - Designed and implemented a distributed CRDT-based datastore system for multi-region network state synchronization with membership tracking, peer metadata broadcasting, and TTL-based expiration.
+          - Built GitOps infrastructure using ArgoCD and Kustomize serving as single source of truth for all cluster deployments across development and production environments.
+          - Led the development of automation tools for deployment pipelines, improving deployment reliability and reducing manual intervention.
+          - Pioneered GitOps patterns and best practices adopted across the organization, including merge automation and environment-specific configuration management.
+          - Ensured comprehensive technical documentation and promoted knowledge sharing within the team and wider business.
         skills:
           - aws
           - oci
