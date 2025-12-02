@@ -55,7 +55,7 @@ jobs:
     # Generate the pdf using chrome
     - name: Generate the pdf
       run: |
-        sudo chown runneradmin:runneradmin public/files/cv.pdf
+        sudo chown $USER:$USER public/files/cv.pdf
         docker run \
         --network container:http \
         -v ${{ github.workspace }}:/usr/src/app \
