@@ -43,7 +43,7 @@ skills:
     cat: DevOps & Orchestration
   - name: argocd
     title: ArgoCD
-    logo: "/images/sections/skills/argocd.png"
+    logo: "/images/sections/skills/argocd.svg"
     summary: "Experienced with GitOps deployment strategies using ArgoCD for automated application delivery."
     url: https://argo-cd.readthedocs.io/
     cat: DevOps & Orchestration
