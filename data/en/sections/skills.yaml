@@ -272,6 +272,11 @@ skills:
     logo: "/images/sections/skills/confluent-cloud.png"
     url: https://www.confluent.io/confluent-cloud/
     cat: Cloud Platforms
+  - name: civo
+    title: Civo
+    logo: "/images/sections/skills/civo.svg"
+    url: https://www.civo.com/
+    cat: Cloud Platforms
   - name: gitlab
     title: GitLab
     logo: "/images/sections/skills/gitlab-logo-100.svg"
@@ -311,6 +316,11 @@ skills:
     title: NATS
     logo: "/images/sections/skills/nats.svg"
     url: https://nats.io/
+    cat: Databases & Messaging
+  - name: supabase
+    title: Supabase
+    logo: "/images/sections/skills/supabase.svg"
+    url: https://supabase.com/
     cat: Databases & Messaging
   - name: bash
     title: Bash
