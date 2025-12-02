@@ -80,7 +80,7 @@ skills:
     cat: Web & Frontend Development
   - name: react
     title: React
-    logo: "/images/sections/skills/react.png"
+    logo: "/images/sections/skills/react.svg"
     summary: "Proficient in building modern web applications with React, including hooks, context, and state management."
     url: https://reactjs.org/
     cat: Web & Frontend Development
@@ -259,12 +259,12 @@ skills:
     cat: DevOps & Orchestration
   - name: argo
     title: Argo
-    logo: "/images/sections/skills/argo.png"
+    logo: "/images/sections/skills/argo-stacked-color.svg"
     url: https://argoproj.github.io/
     cat: DevOps & Orchestration
   - name: k3s
     title: K3S
-    logo: "/images/sections/skills/k3s.png"
+    logo: "/images/sections/skills/k3s.svg"
     url: https://k3s.io/
     cat: DevOps & Orchestration
   - name: confluent-cloud
@@ -279,12 +279,12 @@ skills:
     cat: Tools & Frameworks
   - name: bitbucket
     title: BitBucket
-    logo: "/images/sections/skills/bitbucket.png"
+    logo: "/images/sections/skills/bitbucket.svg"
     url: https://bitbucket.org/
     cat: Tools & Frameworks
   - name: jira
     title: Jira
-    logo: "/images/sections/skills/jira.png"
+    logo: "/images/sections/skills/jira.svg"
     url: https://www.atlassian.com/software/jira
     cat: Tools & Frameworks
   - name: prometheus
@@ -294,22 +294,22 @@ skills:
     cat: Monitoring & Observability
   - name: grafana
     title: Grafana
-    logo: "/images/sections/skills/grafana.png"
+    logo: "/images/sections/skills/grafana.svg"
     url: https://grafana.com/
     cat: Monitoring & Observability
   - name: thanos
     title: Thanos
-    logo: "/images/sections/skills/thanos.png"
+    logo: "/images/sections/skills/thanos.svg"
     url: https://thanos.io/
     cat: Monitoring & Observability
   - name: loki
     title: Loki
-    logo: "/images/sections/skills/loki.png"
+    logo: "/images/sections/skills/loki.svg"
     url: https://grafana.com/oss/loki/
     cat: Monitoring & Observability
   - name: nats
     title: NATS
-    logo: "/images/sections/skills/nats.png"
+    logo: "/images/sections/skills/nats.svg"
     url: https://nats.io/
     cat: Databases & Messaging
   - name: bash
