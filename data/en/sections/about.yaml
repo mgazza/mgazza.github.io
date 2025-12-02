@@ -8,7 +8,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer
+designation: Lead Software Engineer
 # your company information
 company:
   name: Code Laboratory
@@ -19,25 +19,20 @@ resume: "/files/cv.pdf"
 
 # a summary about you
 summary: |
-  With over 15 years of hands-on 
-  experience in software engineering, 
-  I have consistently delivered results
-  and fostered innovation within diverse 
-  teams and projects. 
-  As a seasoned professional, I bring a 
-  wealth of knowledge in orchestrating 
-  the development of scalable software 
-  architectures and cultivating 
-  collaborative environments. My track 
-  record includes successfully leading 
-  teams, driving strategic initiatives, 
-  and achieving business objectives. 
-  With a deep understanding of technology
-  and a passion for driving organizational
-  growth, I continuously seek opportunities 
-  to leverage my expertise to deliver 
-  impactful solutions and drive success 
-  for my team and company.
+  With over 15 years of hands-on experience in software engineering,
+  I specialize in building scalable cloud-native platforms and leading
+  distributed engineering teams. My expertise spans the full stack—from
+  Kubernetes operators and GitOps infrastructure to modern React frontends.
+
+  I have deep domain expertise in the energy sector, having built production
+  systems for home energy management, smart meter integration, and battery
+  optimization. This unique combination of cloud infrastructure skills and
+  energy domain knowledge positions me to deliver high-impact solutions in
+  the rapidly growing cleantech space.
+
+  As a lead engineer, I drive technical strategy, mentor team members, and
+  deliver production-ready systems. I'm passionate about sustainable technology
+  and building platforms that make a real-world impact.
 
 # your interests
 interests: |
