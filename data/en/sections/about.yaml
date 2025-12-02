@@ -21,7 +21,7 @@ resume: "/files/cv.pdf"
 summary: |
   With over 15 years of hands-on experience in software engineering,
   I specialize in building scalable cloud-native platforms and leading
-  distributed engineering teams. My expertise spans the full stack—from
+  distributed engineering teams. My expertise spans the full stack - from
   Kubernetes operators and GitOps infrastructure to modern React frontends.
 
   I have deep domain expertise in the energy sector, having built production
