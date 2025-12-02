@@ -55,7 +55,7 @@ jobs:
     # Generate the pdf using chrome
     - name: Generate the pdf
       run: |
-        sudo chmod 777 public/files
+        rm -f public/files/cv.pdf
         docker run \
         --network container:http \
         -v ${{ github.workspace }}:/usr/src/app \
