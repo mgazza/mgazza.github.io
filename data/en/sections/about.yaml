@@ -20,19 +20,24 @@ resume: "/files/cv.pdf"
 # a summary about you
 summary: |
   With over 15 years of hands-on experience in software engineering,
-  I specialize in building cloud-native platforms with expertise spanning
+  I specialise in building cloud-native platforms with expertise spanning
   the full stack - from Kubernetes operators and GitOps infrastructure to
   modern React frontends.
 
   Currently a Lead Software Engineer at Vitrifi (telecoms/network sector),
-  I architect and deliver production systems across distributed teams.
-  As an entrepreneur, I architected PredBat Cloud, a complete multi-tenant
-  SaaS platform that runs the open-source PredBat home battery optimisation
-  software, serving paying customers and integrating with UK energy providers.
+  I architect distributed systems for multi-region network infrastructure.
+  I've designed and implemented CRDT-based datastores for network state
+  synchronisation, built multiple Kubernetes operators for service lifecycle
+  management, and established GitOps workflows that serve as the single source
+  of truth for production deployments.
+
+  Outside of work, I've architected two production SaaS platforms as technical
+  projects - one reaching paying customers within 4 months - demonstrating my
+  ability to deliver complete solutions from infrastructure to frontend.
 
   I drive technical strategy, mentor teams, and deliver production-ready
-  systems. I'm passionate about building platforms that solve real-world
-  problems, whether in telecoms, energy, or beyond.
+  systems at scale. I'm passionate about building platforms that solve
+  real-world problems, whether in telecoms, energy, fintech, or beyond.
 
 # your interests
 interests: |
