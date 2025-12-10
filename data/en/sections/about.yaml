@@ -19,25 +19,31 @@ resume: "/files/cv.pdf"
 
 # a summary about you
 summary: |
-  With over 15 years of hands-on experience in software engineering,
-  I specialise in building cloud-native platforms with expertise spanning
-  the full stack - from Kubernetes operators and GitOps infrastructure to
-  modern React frontends.
+  Lead Software Engineer with 16+ years of progressive experience architecting and
+  delivering cloud-native platforms, distributed systems, and DevOps infrastructure.
+  Specialist in Kubernetes, Golang, and Platform Engineering with proven ability to
+  lead teams, mentor engineers, and drive technical strategy across telecoms, energy,
+  and fintech sectors.
 
-  Currently a Lead Software Engineer at Vitrifi (telecoms/network sector),
-  I architect distributed systems for multi-region network infrastructure.
-  I've designed and implemented CRDT-based datastores for network state
-  synchronisation, built multiple Kubernetes operators for service lifecycle
-  management, and established GitOps workflows that serve as the single source
-  of truth for production deployments.
+  Currently at Vitrifi (telecoms/network), I architect distributed systems for
+  multi-region network infrastructure. Key achievements include designing and
+  implementing a CRDT-based datastore for network state synchronisation, improving
+  system availability through conflict-free replication across multiple regions,
+  building 5+ production-grade Kubernetes operators, and establishing GitOps
+  infrastructure serving as single source of truth for production deployments.
 
-  Outside of work, I've architected two production SaaS platforms as technical
-  projects - one reaching paying customers within 4 months - demonstrating my
-  ability to deliver complete solutions from infrastructure to frontend.
+  Technical expertise spans: Platform Engineering, SRE practices, Kubernetes,
+  Golang, Python, TypeScript/React, multi-cloud (AWS/Azure/GCP/OCI), Infrastructure
+  as Code (Terraform), GitOps (ArgoCD/Flux), distributed systems (CRDT), and
+  observability (Prometheus/Grafana).
 
-  I drive technical strategy, mentor teams, and deliver production-ready
-  systems at scale. I'm passionate about building platforms that solve
-  real-world problems, whether in telecoms, energy, fintech, or beyond.
+  Outside of work, I've architected two production SaaS platforms - including a
+  multi-tenant energy management platform reaching paying customers within 4 months,
+  demonstrating end-to-end delivery capability from infrastructure to frontend.
+
+  I drive technical strategy, mentor cross-functional teams, and deliver production-ready
+  systems at scale. Seeking senior platform engineering or SRE leadership roles where
+  I can leverage my expertise in building reliable, scalable cloud-native infrastructure.
 
 # your interests
 interests: |

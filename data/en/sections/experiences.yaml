@@ -25,12 +25,12 @@ experiences:
           quality. I also manage project timelines and collaborate with product managers to align technical and business
           objectives.
         achievements:
+          - Designed and implemented distributed CRDT-based datastore system for multi-region network state synchronisation, improving system availability through conflict-free replication and automatic membership tracking.
           - Architected and developed 5+ production-grade Kubernetes operators using Golang for network service lifecycle management.
-          - Designed and implemented a distributed CRDT-based datastore system for multi-region network state synchronization with membership tracking, peer metadata broadcasting, and TTL-based expiration.
-          - Built GitOps infrastructure using ArgoCD and Kustomize serving as single source of truth for all cluster deployments across development and production environments.
-          - Led the development of automation tools for deployment pipelines, improving deployment reliability and reducing manual intervention.
-          - Pioneered GitOps patterns and best practices adopted across the organization, including merge automation and environment-specific configuration management.
-          - Ensured comprehensive technical documentation and promoted knowledge sharing within the team and wider business.
+          - Built GitOps infrastructure using ArgoCD and Kustomize serving as single source of truth for all production deployments, eliminating configuration drift.
+          - Established platform engineering capabilities enabling development teams to self-service infrastructure through GitOps workflows.
+          - Pioneered SRE practices including observability, monitoring, and automated incident response procedures.
+          - Led technical strategy and mentored team members on Kubernetes, Golang, and distributed systems best practices.
         skills:
           - aws
           - oci
@@ -192,10 +192,11 @@ experiences:
         start: Apr 2015
         end: Jan 2018
         responsibilities: |
-          I worked as part of a team to deliver control and automation to the Wiselife IoT product.
+          Delivered control and automation systems for the Wiselife IoT product, enabling smart home device management and energy monitoring.
         achievements:
-          - Developed the Wiselife IoT product.
-          - Developed supporting services and data management systems.
+          - Engineered IoT control systems integrating Z-Wave and Modbus protocols for home automation and energy management.
+          - Built data ingestion pipelines and analytics services processing smart meter and IoT device data.
+          - Developed real-time monitoring dashboards enabling customers to track energy consumption patterns.
         skills:
           - entity-framework
           - sql-server
@@ -225,11 +226,11 @@ experiences:
         start: Apr 2012
         end: Apr 2015
         responsibilities: |
-          I was a web applications developer working in a fully agile environment, developing monitoring, controls, and analysis software used throughout the energy sector. I gathered requirements, designed, developed, and delivered bespoke software solutions for some of the big names in the energy industry.
+          Developed monitoring, controls, and analysis software for the energy sector in a fully agile environment. Delivered bespoke software solutions for major UK energy companies.
         achievements:
-          - Designed and developed customized energy dashboards for diverse clients, enhancing data visualization and analysis capabilities.
-          - Spearheaded the creation of the tmac energy analytics platform, optimizing energy consumption insights for stakeholders.
-          - Engineered data ingestion and processing services, streamlining data handling and analysis workflows for improved efficiency.
+          - Designed and developed customised energy dashboards for major energy providers, enabling real-time consumption monitoring and analytics.
+          - Built the t-mac energy analytics platform providing energy consumption insights and optimization recommendations for commercial clients.
+          - Engineered data ingestion and processing services handling smart meter data streams and energy usage analytics.
         skills:
           - csharp
           - mvc

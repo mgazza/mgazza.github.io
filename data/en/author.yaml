@@ -8,6 +8,7 @@ image: images/author/profile.jpg
 contactInfo:
   email: contact@markgascoyne.co.uk
   phone: "+44 7951553010"
+  location: "United Kingdom"
 
 # some summary about what you do
 summary:
