@@ -11,7 +11,7 @@ menu:
 
 
 **Introduction**  
-If you’ve spent any time working with Kubernetes, you’ve probably heard of *GitOps*—a methodology that treats Git as the source of truth for defining and operating infrastructure and applications. In this post, I’ll walk you through a GitOps setup that uses a hierarchical folder structure, combining Helm, Helmfile, and Kustomize to give you robust, testable, and scalable deployments. We’ll also see how tools like Flux and Tilt fit into the workflow, enabling both automated deployments and seamless local development.
+If you’ve spent any time working with Kubernetes, you’ve probably heard of *GitOps* -a methodology that treats Git as the source of truth for defining and operating infrastructure and applications. In this post, I’ll walk you through a GitOps setup that uses a hierarchical folder structure, combining Helm, Helmfile, and Kustomize to give you robust, testable, and scalable deployments. We’ll also see how tools like Flux and Tilt fit into the workflow, enabling both automated deployments and seamless local development.
 
 ---
 
@@ -29,7 +29,7 @@ This post assumes you’re already sold on GitOps and are looking for a tangible
 
 ## **The Repository Structure**
 
-Our GitOps repository is divided into **four main folders**—plus a special `src` directory for source code and a `Tiltfile` for local dev. Here’s a quick overview:
+Our GitOps repository is divided into **four main folders** -plus a special `src` directory for source code and a `Tiltfile` for local dev. Here’s a quick overview:
 
 ```
 .
@@ -43,7 +43,7 @@ Our GitOps repository is divided into **four main folders**—plus a special `sr
 
 ### **1\. Helm Charts**
 
-* **Purpose**: This directory stores all Helm charts—whether first-party or third-party dependencies—that form the foundation of your Kubernetes services.
+* **Purpose**: This directory stores all Helm charts -whether first-party or third-party dependencies -that form the foundation of your Kubernetes services.
 * **Workflow**:
    1. **Render**: Helm charts are templated to disk.
    2. **Include in Kustomize**: You use Kustomize to ingest those templates.
