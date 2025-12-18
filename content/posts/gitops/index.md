@@ -131,6 +131,20 @@ Now that we’ve broken down the structure, let’s see how changes flow from a 
 
 ---
 
+## **The Single Pane of Glass**
+
+Beyond the technical benefits, this pattern fundamentally changes how teams collaborate.
+
+**One entry point, any role.** Whether you're a backend engineer, frontend dev, SRE, or even a PM wanting to understand the system - you clone one repo and run `tilt up`. Within minutes you have a working `https://localhost.company.co/` with the entire stack running locally.
+
+**Cross-functional debugging.** I've watched frontend engineers fix backend bugs by running `grep -r "error message"` from the repo root. The pseudo mono-repo structure means the answer is always *somewhere* in your checkout - you just need to find it.
+
+**No onboarding tax.** Switching teams doesn't mean spending a week setting up a new development environment. The same `tilt up` command works whether you're on payments, auth, or the data pipeline.
+
+**Declarative infrastructure as documentation.** New joiners can understand the entire system topology by reading the `clusters/` and `groups/` directories. The infrastructure *is* the documentation.
+
+---
+
 ## **Conclusion**
 
 Adopting GitOps with a well-thought-out repository structure can dramatically simplify your Kubernetes workflows. By combining Helm, Helmfile, Kustomize, and tools like Flux or Argo CD, you can create modular, scalable, and testable deployments. And with a local development pipeline powered by Tilt and k3d, you can iterate quickly without sacrificing best practices.
