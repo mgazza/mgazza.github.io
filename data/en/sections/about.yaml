@@ -25,8 +25,8 @@ summary: |
   lead teams, mentor engineers, and drive technical strategy across telecoms, energy,
   and fintech sectors.
 
-  Currently at Vitrifi (telecoms/network), I architect distributed systems for
-  multi-region network infrastructure. Key achievements include designing and
+  Most recently at Vitrifi (telecoms/network), I architected distributed systems
+  for multi-region network infrastructure. Key achievements include designing and
   implementing a CRDT-based datastore for network state synchronisation using
   distributed consensus algorithms, improving system availability through
   conflict-free replication across multiple regions, building 5+ production-grade
