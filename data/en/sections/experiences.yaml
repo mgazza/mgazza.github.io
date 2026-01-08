@@ -26,7 +26,7 @@ experiences:
           quality. I also manage project timelines and collaborate with product managers to align technical and business
           objectives.
         achievements:
-          - Designed and implemented distributed CRDT-based datastore system for multi-region network state synchronisation, improving system availability through conflict-free replication and automatic membership tracking.
+          - Designed and implemented distributed CRDT-based datastore system for multi-region network state synchronisation using Golang, achieving eventual consistency through conflict-free replication, distributed consensus algorithms, and automatic membership tracking across decentralised nodes.
           - Architected and developed 5+ production-grade Kubernetes operators using Golang for network service lifecycle management.
           - Built GitOps infrastructure using ArgoCD and Kustomize serving as single source of truth for all production deployments, eliminating configuration drift.
           - Established platform engineering capabilities enabling development teams to self-service infrastructure through GitOps workflows.
@@ -163,7 +163,7 @@ experiences:
           - Undertook the company's first leap into Kubernetes.
           - Worked with all teams to introduce an agile way of working.
           - Developed and delivered a single sign-on solution hosted in Kubernetes and written in Golang.
-          - Developed and delivered a PCI encryption microservice hosted in Kubernetes and written in Golang.
+          - Developed and delivered a PCI-compliant cryptographic encryption microservice in Golang, implementing secure data handling and encryption algorithms for payment card data protection.
           - Introduced GitOps using Weaveworks and various other Kubernetes technologies (cert-manager, external-dns, sealed-secrets).
           - Produced a Horizontal Pod Autoscaler for Kubernetes that uses pod readiness rather than metrics for scaling.
           - Developed a client-facing website for booking rentals.

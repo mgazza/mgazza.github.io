@@ -27,15 +27,17 @@ summary: |
 
   Currently at Vitrifi (telecoms/network), I architect distributed systems for
   multi-region network infrastructure. Key achievements include designing and
-  implementing a CRDT-based datastore for network state synchronisation, improving
-  system availability through conflict-free replication across multiple regions,
-  building 5+ production-grade Kubernetes operators, and establishing GitOps
-  infrastructure serving as single source of truth for production deployments.
+  implementing a CRDT-based datastore for network state synchronisation using
+  distributed consensus algorithms, improving system availability through
+  conflict-free replication across multiple regions, building 5+ production-grade
+  Kubernetes operators, and establishing GitOps infrastructure serving as single
+  source of truth for production deployments.
 
   Technical expertise spans: Platform Engineering, SRE practices, Kubernetes,
   Golang, Python, TypeScript/React, multi-cloud (AWS/Azure/GCP/OCI), Infrastructure
-  as Code (Terraform), GitOps (ArgoCD/Flux), distributed systems (CRDT), and
-  observability (Prometheus/Grafana).
+  as Code (Terraform), GitOps (ArgoCD/Flux), distributed systems (CRDT, consensus
+  algorithms, state synchronisation), cryptographic systems, and observability
+  (Prometheus/Grafana).
 
   Outside of work, I've architected two production SaaS platforms - including a
   multi-tenant energy management platform reaching paying customers within 4 months,
