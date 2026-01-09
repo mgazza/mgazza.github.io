@@ -26,7 +26,7 @@ experiences:
           quality. I also manage project timelines and collaborate with product managers to align technical and business
           objectives.
         achievements:
-          - Designed and implemented distributed CRDT-based datastore system for multi-region network state synchronisation using Golang, achieving eventual consistency through conflict-free replication, distributed consensus algorithms, and automatic membership tracking across decentralised nodes.
+          - Designed and implemented distributed CRDT-based datastore system for multi-region network state synchronisation using Golang, achieving eventual consistency through conflict-free replication without requiring consensus protocols, with automatic membership tracking across decentralised nodes.
           - Architected and developed 5+ production-grade Kubernetes operators using Golang for network service lifecycle management.
           - Built GitOps infrastructure using ArgoCD and Kustomize serving as single source of truth for all production deployments, eliminating configuration drift.
           - Established platform engineering capabilities enabling development teams to self-service infrastructure through GitOps workflows.
