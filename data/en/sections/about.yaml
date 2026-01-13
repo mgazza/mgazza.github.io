@@ -19,11 +19,11 @@ resume: "/files/cv.pdf"
 
 # a summary about you
 summary: |
-  Lead Software Engineer with 16+ years of progressive experience architecting and
-  delivering cloud-native platforms, distributed systems, and DevOps infrastructure.
-  Specialist in Kubernetes, Golang, and Platform Engineering with proven ability to
-  lead teams, mentor engineers, and drive technical strategy across telecoms, energy,
-  and fintech sectors.
+  Lead Software Engineer with 16+ years building production systems in Golang, Python,
+  and TypeScript. Specialist in distributed systems, platform engineering, and cloud-native
+  architecture with deep expertise designing and implementing backend services, Kubernetes
+  operators, and scalable infrastructure software. Proven ability to lead teams, mentor
+  engineers, and drive technical strategy across telecoms, energy, and fintech sectors.
 
   Most recently at Vitrifi (telecoms/network), I architected distributed systems
   for multi-region network infrastructure. Key achievements include designing and
@@ -39,9 +39,11 @@ summary: |
   eventual consistency, state synchronisation), cryptographic systems, and
   observability (Prometheus/Grafana).
 
-  Outside of work, I've architected two production SaaS platforms - including a
-  multi-tenant energy management platform reaching paying customers within 4 months,
-  demonstrating end-to-end delivery capability from infrastructure to frontend.
+  Technical background spans full-stack software engineering from backend services
+  (Golang, Python) through infrastructure (Kubernetes, cloud platforms) to frontend
+  (TypeScript/React). Have architected and delivered complete production systems
+  including multi-tenant SaaS platforms, demonstrating end-to-end capability from
+  distributed backend services through to user-facing applications.
 
   I drive technical strategy, mentor cross-functional teams, and deliver production-ready
   systems at scale. I excel in building reliable, scalable cloud-native infrastructure
