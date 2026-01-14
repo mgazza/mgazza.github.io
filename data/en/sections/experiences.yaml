@@ -17,14 +17,11 @@ experiences:
       overview: |
         Vitrifi is revolutionising the Telco industry by providing lightweight software solutions to ISP's.
     positions:
-      - designation: Network Systems (Lead Software Engineer)
+      - designation: Lead Software Engineer (converted to perm)
         start: Jun 2023
         end: Dec 2025
         responsibilities: |
-          I lead the design and implementation of scalable software architectures while contributing hands-on to critical
-          software development. I review code submissions from team members to ensure adherence to coding standards and
-          quality. I also manage project timelines and collaborate with product managers to align technical and business
-          objectives.
+          Led a team of 4 engineers, designing and implementing scalable software architectures while contributing hands-on to critical software development. Reviewed code submissions to ensure adherence to coding standards and quality. Managed project timelines and collaborated with product managers to align technical and business objectives.
         achievements:
           - Designed and implemented distributed CRDT-based datastore system for multi-region network state synchronisation using Golang, achieving eventual consistency through conflict-free replication without requiring consensus protocols, with automatic membership tracking across decentralised nodes.
           - Architected and developed 5+ production-grade Kubernetes operators using Golang for network service lifecycle management.
@@ -45,13 +42,11 @@ experiences:
           - bash
           - terraform
           - python
-      - designation: GitOps Consultant (Software Engineer)
+      - designation: GitOps Consultant (Contract)
         start: Dec 2022
         end: Jun 2023
         responsibilities: |
-          I implemented GitOps strategies for the organization and contributed to the development of custom tools 
-          designed to integrate with GitLab CI. I also adapted and extended an existing library of internal tools to 
-          fit the unique requirements of the business, enhancing deployment automation and efficiency.
+          Implemented GitOps strategies for the organization and contributed to the development of custom tools designed to integrate with GitLab CI. Adapted and extended an existing library of internal tools to fit the unique requirements of the business, enhancing deployment automation and efficiency.
         achievements:
           - Implemented GitOps across multiple environments, automating deployment pipelines using GitLab CI.
           - Developed and customized tooling to streamline GitOps workflows, including writing new tools from scratch to meet specific business needs.
@@ -68,11 +63,11 @@ experiences:
           - gitlab
           - bash
           - terraform
-      - designation: Senior Go Developer
+      - designation: Senior Go Developer (Contract - initial engagement)
         start: Jun 2022
         end: Dec 2022
         responsibilities: |
-          I developed CI/CD pipelines with Gitlab CI and a CNE Kubernetes operator.
+          Developed CI/CD pipelines with Gitlab CI and a CNE Kubernetes operator.
         achievements:
           - Successfully delivered CI/CD pipelines and CNE Kubernetes operator.
         skills:
@@ -134,7 +129,7 @@ experiences:
         achievements:
           - Successfully restructured infrastructure and technology.
           - Implemented GitOps to improve deployment pipelines.
-          - Trained developers on best practices for microservices.
+          - Coached development teams on microservices best practices and modern engineering workflows.
         skills:
           - azure
           - kubernetes

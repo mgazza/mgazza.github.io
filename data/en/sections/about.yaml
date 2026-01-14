@@ -19,36 +19,7 @@ resume: "/files/cv.pdf"
 
 # a summary about you
 summary: |
-  Lead Software Engineer with 16+ years building production systems in Golang, Python,
-  and TypeScript. Specialist in distributed systems, platform engineering, and cloud-native
-  architecture with deep expertise designing and implementing backend services, Kubernetes
-  operators, and scalable infrastructure software. Proven ability to lead teams, mentor
-  engineers, and drive technical strategy across telecoms, energy, and fintech sectors.
-
-  Most recently at Vitrifi (telecoms/network), I architected distributed systems
-  for multi-region network infrastructure. Key achievements include designing and
-  implementing a CRDT-based datastore for network state synchronisation achieving
-  eventual consistency without consensus protocols, improving system availability
-  through conflict-free replication across multiple regions, building 5+ production-grade
-  Kubernetes operators, and establishing GitOps infrastructure serving as single
-  source of truth for production deployments.
-
-  Technical expertise spans: Platform Engineering, SRE practices, Kubernetes,
-  Golang, Python, TypeScript/React, multi-cloud (AWS/Azure/GCP/OCI), Infrastructure
-  as Code (Terraform), GitOps (ArgoCD/Flux), distributed systems (CRDT,
-  eventual consistency, state synchronisation), cryptographic systems, and
-  observability (Prometheus/Grafana).
-
-  Technical background spans full-stack software engineering from backend services
-  (Golang, Python) through infrastructure (Kubernetes, cloud platforms) to frontend
-  (TypeScript/React). Have architected and delivered complete production systems
-  including multi-tenant SaaS platforms, demonstrating end-to-end capability from
-  distributed backend services through to user-facing applications.
-
-  I drive technical strategy, mentor cross-functional teams, and deliver production-ready
-  systems at scale. I excel in building reliable, scalable cloud-native infrastructure
-  and thrive in environments where I can leverage my expertise to solve complex technical
-  challenges.
+  Polyglot Engineer with 16+ years building production systems across the full stack: Golang, Python, TypeScript, Kubernetes, and cloud-native infrastructure. I architect distributed systems, build Kubernetes operators, and establish GitOps practices. Most recently led a team of 4 engineers at Vitrifi, delivering eventually-consistent datastores for multi-region network synchronisation and 5+ production-grade Kubernetes operators. I thrive on complex technical challenges and can work at any level of the stack.
 
 # your interests
 interests: |
