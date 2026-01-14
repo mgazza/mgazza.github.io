@@ -233,26 +233,75 @@ jobs:
 
 ---
 
-## **Handling Multiple Layers**
+## **Finding Kustomization Roots**
 
-In more complex setups, you might have:
+In simple setups (one kustomization per cluster), iterating `clusters/*/` works fine. But in more complex setups with nested kustomizations, groups referencing groups, and shared components, you need to find the **roots** - kustomizations that aren't referenced by any other kustomization.
 
-- Multiple clusters (prod, staging, dev)
-- Flux Kustomizations that reference different paths
-- Wave-based rollouts for multi-tenant systems
+The algorithm:
 
-The approach scales: **diff each root that changed**.
+1. Walk all `kustomization.yaml` files, mark each as a potential root
+2. For each one, look at its `resources` and `bases`
+3. Any kustomization that's referenced by another gets marked as NOT a root
+4. What remains are true roots
+
+Here's a bash implementation:
 
 ```bash
-# Detect which roots changed
-changed_roots=$(git diff --name-only origin/main | grep "^clusters/" | cut -d'/' -f1-2 | sort -u)
+#!/usr/bin/env bash
+# find-kustomize-roots.sh - Find kustomizations not referenced by others
 
-for root in $changed_roots; do
-  # Build and diff only affected roots
+declare -A is_root
+
+# Find all kustomization.yaml files and mark as potential roots
+while IFS= read -r kfile; do
+  is_root["$kfile"]=1
+done < <(find . -name "kustomization.yaml")
+
+# For each kustomization, mark its references as non-roots
+for kfile in "${!is_root[@]}"; do
+  dir=$(dirname "$kfile")
+
+  # Extract resources and bases from the kustomization
+  refs=$(yq -r '(.resources // []) + (.bases // []) | .[]' "$kfile" 2>/dev/null)
+
+  for ref in $refs; do
+    # Resolve the referenced kustomization path
+    ref_kustomize=$(realpath -m "$dir/$ref/kustomization.yaml" 2>/dev/null)
+    ref_kustomize=".${ref_kustomize#$(pwd)}"
+
+    if [[ -f "$ref_kustomize" ]]; then
+      is_root["$ref_kustomize"]=0
+    fi
+  done
+done
+
+# Output only the roots
+for kfile in "${!is_root[@]}"; do
+  if [[ "${is_root[$kfile]}" == "1" ]]; then
+    echo "$kfile"
+  fi
 done
 ```
 
-For Flux-managed clusters, you can even generate diffs per Flux Kustomization by parsing the `spec.path` from each Kustomization resource.
+Now your diff script becomes:
+
+```bash
+# Build and diff only root kustomizations
+for root in $(./find-kustomize-roots.sh); do
+  root_dir=$(dirname "$root")
+  name=$(echo "$root_dir" | tr '/' '-')
+
+  git checkout origin/main
+  kustomize build "$root_dir" > /tmp/main-$name.yaml
+
+  git checkout $PR_BRANCH
+  kustomize build "$root_dir" > /tmp/pr-$name.yaml
+
+  diff -u /tmp/main-$name.yaml /tmp/pr-$name.yaml > diffs/$name.diff || true
+done
+```
+
+This ensures you diff what actually gets deployed, not intermediate layers that are only used as building blocks.
 
 ---
 
