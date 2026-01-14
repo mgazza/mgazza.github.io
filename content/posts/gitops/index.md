@@ -23,7 +23,7 @@ Before we dive into the specifics, let’s revisit what GitOps brings to the tab
 * **Single Source of Truth**: Teams can rely on the repo as the canonical description of what’s running in each cluster.
 * **Automation**: Changes in Git trigger updates to your clusters, reducing manual operations and ensuring consistency.
 
-This post assumes you’re already sold on GitOps and are looking for a tangible organizational pattern. Let’s jump in.
+This post assumes you're already sold on GitOps and are looking for a tangible organisational pattern. Let's jump in.
 
 ---
 
@@ -71,7 +71,7 @@ This approach decouples the raw Helm charts from the environment-specific overla
 * **Structure**:
    * Each cluster has its own folder, which Flux (or another GitOps tool like Argo CD) monitors.
    * Subfolders often map to namespaces or functional areas.
-   * Environment-specific customizations, such as image overrides or domain-specific settings, also live here.
+   * Environment-specific customisations, such as image overrides or domain-specific settings, also live here.
 * **Benefits**: This design ensures that each cluster references only the resources it needs, with any environment-specific overrides captured in a single place.
 
 ### **5\. `src` (Git Submodules)**
