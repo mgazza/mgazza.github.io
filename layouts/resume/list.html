@@ -1,0 +1,20 @@
+{{ define "header" }}
+{{ $resume := resources.Get "resume/resume.scss" | css.Sass (dict "outputStyle" "compressed") | fingerprint }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="{{ $resume.Permalink }}"/>
+{{ end }}
+
+{{ define "content" }}
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+      {{ partial "resume/header.html" . }}
+      {{ partial "resume/about.html" }}
+      {{ partial "resume/skills.html" }}
+      {{ partial "resume/experience.html" }}
+      {{ partial "resume/education.html" }}
+      {{ partial "resume/testimonials.html" }}
+      {{ partial "resume/contact.html" }}
+  </div>
+</section>
+{{ end }}
+

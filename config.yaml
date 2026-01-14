@@ -139,9 +139,9 @@ params:
     analytics:
       enabled: true
       services:
-        # Google Analytics
+        # Google Analytics 4
         google:
-          id: UA-168224295-2
+          id: G-2E1HN9XECT
         # # CounterDev
         # counterDev:
         #   id: <your counterdev id>

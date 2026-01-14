@@ -1,0 +1,19 @@
+{{ if site.Config.Services.GoogleAnalytics.ID }}
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Config.Services.GoogleAnalytics.ID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.Config.Services.GoogleAnalytics.ID }}');
+</script>
+{{ else if site.GoogleAnalytics }}
+<!-- Google Analytics (legacy) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.GoogleAnalytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.GoogleAnalytics }}');
+</script>
+{{ end }}
