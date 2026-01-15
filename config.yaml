@@ -60,10 +60,10 @@ params:
     inverted: /images/site/icon.svg
     favicon: /images/site/icon.svg
 
-  # GitHub repo of your site
-  gitRepo: https://github.com/mgazza/mgazza.github.io
+  # GitHub repo of your site (commented out to disable "improve this page" links)
+  # gitRepo: https://github.com/mgazza/mgazza.github.io
   # Default branch of your Git repo
-  gitBranch: main
+  # gitBranch: main
 
   # Configure the number of section title visible in the top navbar
   topNavbar:
