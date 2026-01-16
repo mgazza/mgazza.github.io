@@ -5,6 +5,8 @@ draft: false
 author: "Mark Gascoyne"
 tags: ["interviews", "distributed-systems", "career", "system-design"]
 categories: ["Engineering"]
+build:
+  list: never
 ---
 
 I recently interviewed for a senior engineering role at a well-known fintech company. The interview went sideways in an interesting way, and the feedback I received reveals something important about how technical interviews can fail when leveling expectations aren't aligned.
