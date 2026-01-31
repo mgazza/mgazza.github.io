@@ -42,13 +42,19 @@ bng-edge-infra/
 │   ├── staging/         # Staging Flux manifests
 │   └── production/      # Production Flux manifests
 ├── components/
-│   ├── bng/             # BNG Kubernetes manifests
-│   ├── nexus/           # Nexus Kubernetes manifests
-│   └── bngblaster/      # Traffic generator
-├── charts/              # Generated Helm templates
-├── scripts/
-│   ├── helmfile.yaml    # Infrastructure definitions
-│   └── hydrate.sh       # Manifest generation
+│   ├── base/            # Reusable base components
+│   │   ├── bng/         # BNG deployment template
+│   │   ├── nexus/       # Nexus StatefulSet template
+│   │   ├── nexus-p2p/   # Nexus P2P cluster template
+│   │   └── rendezvous-server/  # P2P discovery server
+│   ├── demos/           # Demo overlays
+│   │   ├── standalone/  # Demo A
+│   │   ├── single/      # Demo B
+│   │   ├── p2p-cluster/ # Demo C
+│   │   └── distributed/ # Demo D
+│   ├── bngblaster/      # Traffic generator
+│   └── ...              # Test components
+├── charts/              # Helm templates (Cilium, Prometheus, Grafana)
 ├── src/
 │   ├── bng/             # SUBMODULE: BNG source
 │   └── nexus/           # SUBMODULE: Nexus source
@@ -81,7 +87,7 @@ The repo ships with four progressively complex deployment modes. Each one teache
 ┌─────────────────────────────────────────────────────────────────────┐
 │  Demo C: Nexus P2P Cluster                                          │
 │  ┌─────────┐   ┌─────────┐   ┌─────────┐                            │
-│  │ Nexus-0 │ ↔ │ Nexus-1 │ ↔ │ Nexus-2 │  ← CRDT sync via mDNS     │
+│  │ Nexus-0 │ ↔ │ Nexus-1 │ ↔ │ Nexus-2 │  ← CRDT sync via libp2p          │
 │  └─────────┘   └─────────┘   └─────────┘                            │
 │  Good for: Testing distributed state, partition tolerance           │
 └─────────────────────────────────────────────────────────────────────┘
@@ -104,9 +110,11 @@ The repo ships with four progressively complex deployment modes. Each one teache
 You can run any specific demo or all of them at once:
 
 ```bash
-tilt up                  # All demos
-tilt up -- --demo=a      # Just standalone BNG
-tilt up -- --demo=d      # Just full distributed
+tilt up                  # Shows available groups
+tilt up demo-a           # Just standalone BNG
+tilt up demo-d           # Just full distributed
+tilt up demo-a demo-b    # Multiple demos
+tilt up all              # Everything
 ```
 
 ## The One-Command Experience
@@ -142,7 +150,8 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 ```bash
 git clone --recurse-submodules git@github.com:codelaboratoryltd/bng-edge-infra.git
 cd bng-edge-infra
-tilt up
+./scripts/init.sh    # Create k3d cluster (first time only)
+tilt up demo-a       # Run standalone BNG demo
 ```
 
 That's it. Go make a coffee.
@@ -193,7 +202,7 @@ Each demo has a "verify" button in the Tilt UI. Click it to run a quick health c
 For serious traffic testing, we include [BNG Blaster](https://github.com/rtbrick/bngblaster) - an open-source traffic generator designed for BNG testing:
 
 ```bash
-tilt up -- --demo=blaster
+tilt up blaster
 ```
 
 This gives you pre-configured test scenarios:
@@ -206,7 +215,7 @@ This gives you pre-configured test scenarios:
 For quick DHCP validation without BNG Blaster's complexity, there's a lightweight test harness:
 
 ```bash
-tilt up -- --demo=blaster-test
+tilt up blaster-test
 ```
 
 This spins up a BNG with a sidecar container that can generate real DHCP traffic over a veth pair. The Tilt UI has buttons for:
@@ -323,7 +332,8 @@ If you're building ISP infrastructure, evaluating the architecture, or just curi
 ```bash
 git clone --recurse-submodules git@github.com:codelaboratoryltd/bng-edge-infra.git
 cd bng-edge-infra
-tilt up
+./scripts/init.sh    # Create k3d cluster
+tilt up demo-a       # Run standalone BNG demo
 ```
 
 **Links:**
