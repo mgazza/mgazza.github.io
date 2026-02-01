@@ -54,14 +54,14 @@ bng-edge-infra/
 │   │   └── distributed/ # Demo D
 │   ├── bngblaster/      # Traffic generator
 │   └── ...              # Test components
-├── charts/              # Helm templates (Cilium, Prometheus, Grafana)
+├── charts/              # Infrastructure (Cilium, Prometheus, Grafana)
 ├── src/
 │   ├── bng/             # SUBMODULE: BNG source
 │   └── nexus/           # SUBMODULE: Nexus source
 └── Tiltfile             # The magic
 ```
 
-The key insight is treating the *entire deployment experience* as code. Not just the Kubernetes manifests, but the cluster creation, the Helm chart hydration, the port forwarding, and the test harnesses.
+The key insight is treating the *entire deployment experience* as code. Not just the Kubernetes manifests, but the cluster creation, the infrastructure setup, the port forwarding, and the test harnesses.
 
 ## Four Demo Configurations
 
@@ -125,7 +125,7 @@ You need Docker and about 8GB of RAM. Then install the tools:
 
 **macOS:**
 ```bash
-brew install k3d kubectl tilt-dev/tap/tilt helmfile helm
+brew install k3d kubectl tilt-dev/tap/tilt
 ```
 
 **Linux:**
@@ -139,10 +139,6 @@ chmod +x kubectl && sudo mv kubectl /usr/local/bin/
 
 # tilt
 curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash
-
-# helm + helmfile
-curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
-# helmfile from GitHub releases or brew
 ```
 
 ### Clone and Run
@@ -158,31 +154,36 @@ That's it. Go make a coffee.
 
 ### What Happens Under The Hood
 
-When you run `tilt up`, here's what happens:
+The setup is split into two steps:
 
-1. **k3d cluster creation** - A local Kubernetes cluster named `bng-edge` spins up with Flannel disabled (we'll use Cilium instead).
+**First, `./scripts/init.sh` creates the k3d cluster:**
+- A local Kubernetes cluster named `bng-edge` spins up
+- Flannel is disabled (we use Cilium instead)
+- A local Docker registry is created at `localhost:5555`
 
-2. **Helmfile hydration** - Infrastructure charts (Cilium, Prometheus, Grafana) are templated and applied.
+**Then, `tilt up <group>` does the rest:**
 
-3. **Docker builds** - BNG and Nexus images are built from the submodules with live reload enabled.
+1. **Cilium installation** - The eBPF-based CNI is deployed via kustomize, enabling Hubble observability.
 
-4. **Namespace creation** - Each demo gets its own namespace (`demo-standalone`, `demo-single`, `demo-p2p`, `demo-distributed`).
+2. **Docker builds** - BNG and Nexus images are built from the submodules and pushed to the local registry.
 
-5. **Workload deployment** - Deployments and StatefulSets are created with appropriate configurations.
+3. **Demo deployment** - The selected demo components are deployed via kustomize. Each demo gets its own namespace (`demo-standalone`, `demo-single`, `demo-p2p`, `demo-distributed`).
 
-6. **Port forwarding** - Services are exposed to localhost automatically.
+4. **Port forwarding** - Services are exposed to localhost automatically.
+
+5. **Live reload** - File changes trigger automatic rebuilds and redeployments.
 
 After a few minutes, you'll have:
 
-| Service | URL |
-|---------|-----|
-| Tilt UI | http://localhost:10350 |
-| BNG API (Demo A) | http://localhost:8080 |
-| Nexus API (Demo B) | http://localhost:9001 |
-| BNG API (Demo D) | http://localhost:8083 |
-| Hubble UI | http://localhost:12000 |
-| Prometheus | http://localhost:9090 |
-| Grafana | http://localhost:3000 |
+| Service | URL | Notes |
+|---------|-----|-------|
+| Tilt UI | http://localhost:10350 | Always available |
+| BNG API (Demo A) | http://localhost:8080 | `tilt up demo-a` |
+| Nexus API (Demo B) | http://localhost:9001 | `tilt up demo-b` |
+| BNG API (Demo D) | http://localhost:8083 | `tilt up demo-d` |
+| Hubble UI | http://localhost:12000 | `tilt up <demo> infra` |
+| Prometheus | http://localhost:9090 | `tilt up <demo> infra` |
+| Grafana | http://localhost:3000 | `tilt up <demo> infra` |
 
 ## Testing Without Real Hardware
 
