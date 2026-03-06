@@ -350,3 +350,4 @@ This approach has saved me countless "oops" moments and makes PR reviews genuine
 * [Kustomize](https://kustomize.io/)
 * [Helmfile](https://github.com/helmfile/helmfile)
 * [diff2html](https://diff2html.xyz/) - For visual diff rendering
+* [Stop Building Every kustomization.yaml in CI](/posts/kustomize-roots/) - Automated root discovery
