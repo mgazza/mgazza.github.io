@@ -79,6 +79,12 @@ The key edge case is remote references. Kustomize supports referencing other rep
 
 I built [kustomize-roots](https://github.com/mgazza/kustomize-roots) to do exactly this. It's ~500 lines of Go with a single external dependency (`gopkg.in/yaml.v3`).
 
+### Install
+
+```bash
+go install github.com/mgazza/kustomize-roots@latest
+```
+
 ### CLI
 
 ```bash
@@ -136,14 +142,9 @@ No hardcoded paths. No stale lists. Add a new cluster directory and CI picks it 
 
 In the [PR diffs post](/posts/gitops-pr-diffs/), I showed how to generate manifest diffs at review time instead of deployment time. The weak point was finding which kustomizations to build — I used a bash script that was one edge case away from breaking.
 
-kustomize-roots closes that gap. The diff pipeline becomes:
+kustomize-roots with `-build` replaces that entire script. It discovers the roots *and* builds them in one step. The bash script from that post — find kustomizations, walk references, figure out what's a root, build each one — is exactly what `kustomize-roots -build` does, minus the fragility.
 
-1. **Find roots** — `kustomize-roots -json .` on both branches
-2. **Build** — `kustomize build` each root for both main and PR branch
-3. **Diff** — compare the rendered manifests
-4. **Review** — post the diff as a PR comment
-
-The root discovery is automatic and correct. No manual maintenance, no missed roots, no false failures from building intermediates.
+For the full PR diff workflow — rendering manifests on both branches and diffing the output — the `-output-dir` flag writes each root's rendered manifests to individual files, which you can then diff between branches. See the [PR diffs post](/posts/gitops-pr-diffs/) for the complete pattern.
 
 ---
 
