@@ -126,7 +126,7 @@ skills:
     title: Z Wave
     logo: "/images/sections/skills/zwave.png"
     url: https://www.z-wave.com/
-    cat: Tools & Frameworks
+    cat: Hardware & Embedded
   - name: google-cloud
     title: Google Cloud
     logo: "/images/sections/skills/google-cloud.png"
@@ -156,7 +156,7 @@ skills:
     title: Modbus
     logo: "/images/sections/skills/modbus.png"
     url: http://www.modbus.org/
-    cat: Tools & Frameworks
+    cat: Hardware & Embedded
   - name: scala
     title: Scala
     logo: "/images/sections/skills/scala.png"
@@ -342,3 +342,78 @@ skills:
     logo: "/images/sections/skills/postgresql.svg"
     url: https://www.postgresql.org/
     cat: Databases & Messaging
+  - name: grpc
+    title: gRPC
+    logo: "/images/sections/skills/grpc.svg"
+    url: https://grpc.io/
+    cat: Web & Frontend Development
+  - name: graphql
+    title: GraphQL
+    logo: "/images/sections/skills/graphql.svg"
+    url: https://graphql.org/
+    cat: Web & Frontend Development
+  - name: openapi
+    title: OpenAPI
+    logo: "/images/sections/skills/openapi.svg"
+    url: https://www.openapis.org/
+    cat: Web & Frontend Development
+  - name: capacitor
+    title: Capacitor
+    logo: "/images/sections/skills/capacitor.svg"
+    url: https://capacitorjs.com/
+    cat: Web & Frontend Development
+  - name: mcp
+    title: Model Context Protocol
+    logo: "/images/sections/skills/mcp.svg"
+    url: https://modelcontextprotocol.io/
+    cat: Tools & Frameworks
+  - name: github-actions
+    title: GitHub Actions
+    logo: "/images/sections/skills/github-actions.svg"
+    url: https://github.com/features/actions
+    cat: Tools & Frameworks
+  - name: k6
+    title: k6
+    logo: "/images/sections/skills/k6.svg"
+    url: https://k6.io/
+    cat: Tools & Frameworks
+  - name: k3d
+    title: k3d
+    logo: "/images/sections/skills/k3d.svg"
+    url: https://k3d.io/
+    cat: DevOps & Orchestration
+  - name: mongodb
+    title: MongoDB
+    logo: "/images/sections/skills/mongodb.svg"
+    url: https://www.mongodb.com/
+    cat: Databases & Messaging
+  - name: dynamodb
+    title: DynamoDB
+    logo: "/images/sections/skills/dynamodb.svg"
+    url: https://aws.amazon.com/dynamodb/
+    cat: Databases & Messaging
+  - name: mqtt
+    title: MQTT
+    logo: "/images/sections/skills/mqtt.svg"
+    url: https://mqtt.org/
+    cat: Databases & Messaging
+  - name: aws-lambda
+    title: AWS Lambda
+    logo: "/images/sections/skills/aws-lambda.svg"
+    url: https://aws.amazon.com/lambda/
+    cat: Cloud Platforms
+  - name: cloudflare
+    title: Cloudflare
+    logo: "/images/sections/skills/cloudflare.svg"
+    url: https://www.cloudflare.com/
+    cat: Cloud Platforms
+  - name: opentelemetry
+    title: OpenTelemetry
+    logo: "/images/sections/skills/opentelemetry.svg"
+    url: https://opentelemetry.io/
+    cat: Monitoring & Observability
+  - name: esp32
+    title: ESP32
+    logo: "/images/sections/skills/esp32.svg"
+    url: https://www.espressif.com/
+    cat: Hardware & Embedded

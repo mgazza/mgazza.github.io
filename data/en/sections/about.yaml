@@ -19,7 +19,7 @@ resume: "/files/cv.pdf"
 
 # a summary about you
 summary: |
-  Polyglot Engineer with 16+ years building production systems across the full stack: Golang, Python, TypeScript, Kubernetes, and cloud-native infrastructure. I architect distributed systems, build Kubernetes operators, and establish GitOps practices. Most recently led a team of 4 engineers at Vitrifi, delivering eventually-consistent datastores for multi-region network synchronisation and 5+ production-grade Kubernetes operators. I thrive on complex technical challenges and can work at any level of the stack.
+  Polyglot Engineer with 16+ years building production systems across the full stack: Golang, Python, TypeScript, Kubernetes, and cloud-native infrastructure. I architect distributed systems, build Kubernetes operators, and establish GitOps practices. I am co-founder and CTO of Predictive Cloud, where I built and run PredBat — a multi-tenant Kubernetes platform for home battery optimisation, spanning custom ESP32 gateway hardware and firmware through to iOS and Android apps. Alongside that I contract: most recently the pricing and quote-binding services behind Tempcover's next-generation quoting platform, and a Kubernetes sandbox substrate with MCP tooling for AI agents at Testkube. Before contracting I led a team of 4 engineers at Vitrifi, delivering eventually-consistent datastores for multi-region network synchronisation and 5+ production-grade Kubernetes operators. I thrive on complex technical challenges and can work at any level of the stack.
 
 # your interests
 interests: |

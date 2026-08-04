@@ -11,6 +11,110 @@ section:
 # Your experiences
 experiences:
   - company:
+      name: Predictive Cloud Ltd
+      url: "https://predbat.com/"
+      location: Remote
+      overview: |
+        Predictive Cloud builds PredBat, a home battery optimisation platform for UK households, combining live tariff data, solar forecasting and direct inverter control.
+    positions:
+      - designation: Co-founder & CTO
+        start: Feb 2025
+        end: Present
+        responsibilities: |
+          Co-founded the company and lead all technical delivery, from the multi-tenant Kubernetes platform and customer-facing applications through to custom gateway hardware and firmware. Set technical direction and own production operations for a live subscription service with a recurring revenue base.
+        achievements:
+          - Architected and operate a multi-tenant Kubernetes platform on Hetzner, with per-customer namespace isolation, Flux GitOps, templated per-customer manifests and SOPS/age encrypted secrets, serving 280+ paying subscribers in production.
+          - Designed the PredBat Gateway, a custom ESP32-S3 USB dongle speaking Modbus RTU directly to inverters, taking it from hardware specification through schematic capture and contract fabrication to firmware, an over-the-air update pipeline and Bluetooth LE provisioning.
+          - Built the device telemetry pipeline, ingesting samples over MQTT into VictoriaMetrics with Grafana dashboards, alerting and public status pages.
+          - Integrated UK energy suppliers and inverter vendors including Octopus, EDF and E.ON, alongside GivEnergy, Fox ESS, Solis, SolaX, Sunsynk, Deye and Ohme, covering OAuth flows, token refresh and reverse-engineering undocumented APIs where no public contract existed.
+          - Delivered the customer-facing product as a React and TypeScript dashboard with real-time WebSocket telemetry, Supabase authentication, subscription billing, internationalisation, and iOS and Android applications via Capacitor with end-to-end Playwright coverage.
+          - Reverse-engineered inverter firmware for interoperability, building a static analysis toolchain that recovers Modbus register maps and scaling factors with per-fact confidence scoring.
+          - Secured cluster access behind a Cloudflare Zero Trust tunnel with K3s OIDC validating access tokens, gating administrative access on GitHub organisation membership and eliminating public API and SSH exposure.
+        skills:
+          - kubernetes
+          - golang
+          - python
+          - typescript
+          - react
+          - terraform
+          - flux
+          - kustomize
+          - supabase
+          - postgresql
+          - mqtt
+          - grafana
+          - esp32
+          - modbus
+          - capacitor
+          - cloudflare
+          - docker
+  - company:
+      name: Tempcover
+      url: "https://www.tempcover.com/"
+      location: Remote
+      overview: |
+        Tempcover is a UK insurtech providing short-term and temporary vehicle insurance.
+    positions:
+      - designation: Senior Software Engineer (Contract)
+        start: May 2026
+        end: Aug 2026
+        responsibilities: |
+          Built out the next-generation quoting platform — a set of Golang services on AWS covering pricing enrichment, quote persistence and binding, and the bridge to the legacy estate — working across service boundaries and coordinating contract changes with neighbouring teams.
+        achievements:
+          - Built the pricing computation layer for a new quote enrichment service end to end — request builder, rating engine adapter, and response mapper — replacing stubbed pricing with live rating calls, then extended scheme coverage from private car to commercial vehicle and courier.
+          - Designed a profile-based fixture system and an in-process deterministic mock rating server, giving the team fast, reproducible integration tests without depending on a vendor staging environment.
+          - Added persistence to the quoting API with DynamoDB quote and bound-quote tables (TTL, point-in-time recovery, production deletion protection), a commit endpoint using conditional writes to guarantee single-bind semantics, and quote retrieval by both native and legacy identifiers via a secondary index.
+          - Built a backfill client from scratch to bridge the next-generation platform to the legacy estate, covering field mapping, create and update calls wired into the create and commit paths, stage-gated rollout, and narrowly typed error sentinels so each failure mode surfaces a distinct API response and log signal.
+          - Authored OpenAPI 3.0.3 contracts for both services with CI validation of cross-repo reference bundling, led a coordinated schema migration across three services, and extracted a shared underwriters package and service client to replace hardcoded lookups in four more.
+          - Diagnosed and fixed three production defects in the rating engine request path — correlation header propagation, postcode normalisation, and timezone handling — shipping the riskiest behind a killswitch, and produced standalone reproduction scripts that proved a hard concurrency ceiling in the vendor environment and isolated a front-end failure that never reached the backend.
+          - Raised the engineering baseline across the estate with k6 smoke and service tests in PR checks, conventional commit validation, consolidated git hooks running golangci-lint and gofmt, and PII scrubbing from application logs.
+        skills:
+          - golang
+          - aws
+          - dynamodb
+          - aws-lambda
+          - openapi
+          - k6
+          - opentelemetry
+          - github-actions
+          - docker
+          - typescript
+  - company:
+      name: Testkube (Kubeshop)
+      url: "https://testkube.io/"
+      location: Remote
+      overview: |
+        Testkube is a Kubernetes-native test orchestration and execution platform, with an AI copilot for authoring and triaging tests.
+    positions:
+      - designation: Senior Software Engineer (Contract)
+        start: Feb 2026
+        end: May 2026
+        responsibilities: |
+          Worked across the Testkube control plane, agent, and AI copilot — Golang backend services, Kubernetes controllers, gRPC APIs, and the local development platform used by the wider engineering team.
+        achievements:
+          - Built the Runspace agentic execution substrate — a gRPC bridge service plus a Kubernetes agent-sandbox controller that provisions per-session sandbox pods, allowing AI agents to execute commands inside an isolated cluster workload, with JWT bridge authentication, ownership enforcement, and an end-to-end lifecycle smoke test.
+          - Extended Testkube's MCP server with tools for execution tag editing, execution ID lookup, and ranged artifact retrieval (line ranges, grep, binary detection), substantially reducing token consumption when AI agents read large test artifacts.
+          - Designed and delivered AI cost guardrails including organisation-level token caps, per-agent token limits, mid-session enforcement, and per-trigger rate limiting.
+          - Delivered webhook agent-targeting end-to-end, spanning CRDs, domain models, mappers, and target-selector filtering in the public API.
+          - Replaced the legacy local development setup with a declarative GitOps workspace built on k3d, Tilt and Kustomize components, adding live-reload Go builds and Vite HMR for the dashboard to shorten the inner loop for the whole team.
+          - Hardened the core platform with agent key rotation with grace periods, fail-fast handling for parallel workflow steps, log-stream retries on kubelet proxy errors, insecure registry support for image inspection, additional linting, dockerised OpenAPI code generation, and automated PR review reminders.
+        skills:
+          - golang
+          - kubernetes
+          - grpc
+          - mcp
+          - kustomize
+          - tilt
+          - k3d
+          - helm
+          - postgresql
+          - mongodb
+          - nats
+          - docker
+          - github-actions
+          - react
+          - typescript
+  - company:
       name: Vitrifi
       url: "https://www.vitrifi.net/"
       location: Remote
