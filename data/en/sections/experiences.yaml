@@ -59,14 +59,14 @@ experiences:
         start: May 2026
         end: Aug 2026
         responsibilities: |
-          Built out the next-generation quoting platform — a set of Golang services on AWS covering pricing enrichment, quote persistence and binding, and the bridge to the legacy estate — working across service boundaries and coordinating contract changes with neighbouring teams.
+          Built out the next-generation quoting platform: a set of Golang services on AWS covering pricing enrichment, quote persistence and binding, and the bridge to the legacy estate, working across service boundaries and coordinating contract changes with neighbouring teams.
         achievements:
-          - Built the pricing computation layer for a new quote enrichment service end to end — request builder, rating engine adapter, and response mapper — replacing stubbed pricing with live rating calls, then extended scheme coverage from private car to commercial vehicle and courier.
+          - Built the pricing computation layer for a new quote enrichment service end to end, covering request builder, rating engine adapter and response mapper, replacing stubbed pricing with live rating calls, then extended scheme coverage from private car to commercial vehicle and courier.
           - Designed a profile-based fixture system and an in-process deterministic mock rating server, giving the team fast, reproducible integration tests without depending on a vendor staging environment.
           - Added persistence to the quoting API with DynamoDB quote and bound-quote tables (TTL, point-in-time recovery, production deletion protection), a commit endpoint using conditional writes to guarantee single-bind semantics, and quote retrieval by both native and legacy identifiers via a secondary index.
           - Built a backfill client from scratch to bridge the next-generation platform to the legacy estate, covering field mapping, create and update calls wired into the create and commit paths, stage-gated rollout, and narrowly typed error sentinels so each failure mode surfaces a distinct API response and log signal.
           - Authored OpenAPI 3.0.3 contracts for both services with CI validation of cross-repo reference bundling, led a coordinated schema migration across three services, and extracted a shared underwriters package and service client to replace hardcoded lookups in four more.
-          - Diagnosed and fixed three production defects in the rating engine request path — correlation header propagation, postcode normalisation, and timezone handling — shipping the riskiest behind a killswitch, and produced standalone reproduction scripts that proved a hard concurrency ceiling in the vendor environment and isolated a front-end failure that never reached the backend.
+          - Diagnosed and fixed three production defects in the rating engine request path, covering correlation header propagation, postcode normalisation and timezone handling, shipping the riskiest behind a killswitch, and produced standalone reproduction scripts that proved a hard concurrency ceiling in the vendor environment and isolated a front-end failure that never reached the backend.
           - Raised the engineering baseline across the estate with k6 smoke and service tests in PR checks, conventional commit validation, consolidated git hooks running golangci-lint and gofmt, and PII scrubbing from application logs.
         skills:
           - golang
@@ -90,9 +90,9 @@ experiences:
         start: Feb 2026
         end: May 2026
         responsibilities: |
-          Worked across the Testkube control plane, agent, and AI copilot — Golang backend services, Kubernetes controllers, gRPC APIs, and the local development platform used by the wider engineering team.
+          Worked across the Testkube control plane, agent, and AI copilot, covering Golang backend services, Kubernetes controllers, gRPC APIs, and the local development platform used by the wider engineering team.
         achievements:
-          - Built the Runspace agentic execution substrate — a gRPC bridge service plus a Kubernetes agent-sandbox controller that provisions per-session sandbox pods, allowing AI agents to execute commands inside an isolated cluster workload, with JWT bridge authentication, ownership enforcement, and an end-to-end lifecycle smoke test.
+          - Built the Runspace agentic execution substrate: a gRPC bridge service plus a Kubernetes agent-sandbox controller that provisions per-session sandbox pods, allowing AI agents to execute commands inside an isolated cluster workload, with JWT bridge authentication, ownership enforcement, and an end-to-end lifecycle smoke test.
           - Extended Testkube's MCP server with tools for execution tag editing, execution ID lookup, and ranged artifact retrieval (line ranges, grep, binary detection), substantially reducing token consumption when AI agents read large test artifacts.
           - Designed and delivered AI cost guardrails including organisation-level token caps, per-agent token limits, mid-session enforcement, and per-trigger rate limiting.
           - Delivered webhook agent-targeting end-to-end, spanning CRDs, domain models, mappers, and target-selector filtering in the public API.

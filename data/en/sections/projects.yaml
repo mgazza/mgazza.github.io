@@ -23,7 +23,7 @@ projects:
     logo: /images/sections/projects/predbat.png
     role: Co-founder & CTO
     timeline: "Feb 2025 - Present"
-    summary: Home battery optimisation platform for UK households — cloud, hardware and mobile — serving 280+ paying subscribers in production.
+    summary: Home battery optimisation platform for UK households, spanning cloud, hardware and mobile, serving 280+ paying subscribers in production.
     tags: ["professional"]
     description: |
       PredBat forecasts household solar generation and demand, reads live half-hourly tariffs, and drives the
@@ -39,7 +39,7 @@ projects:
       - Customer lifecycle automation covering onboarding, pause/resume and deletion
 
       **Hardware & Firmware:**
-      - PredBat Gateway — a custom ESP32-S3 USB dongle speaking Modbus RTU directly to the inverter, designed
+      - PredBat Gateway, a custom ESP32-S3 USB dongle speaking Modbus RTU directly to the inverter, designed
         from schematic capture through contract fabrication
       - Over-the-air firmware update pipeline and Bluetooth LE provisioning for out-of-the-box setup
       - Static-analysis toolchain that recovers inverter register maps and scaling factors from firmware images,
