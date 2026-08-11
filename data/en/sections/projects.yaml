@@ -19,33 +19,41 @@ buttons:
 
 # your projects
 projects:
-  - name: PredBat SaaS Platform
+  - name: PredBat
     logo: /images/sections/projects/predbat.png
-    role: Lead Engineer (SaaS Platform)
+    role: Co-founder & CTO
     timeline: "Feb 2025 - Present"
-    summary: Multi-tenant Kubernetes-based SaaS platform for home battery optimization, serving paying customers in production.
-    tags: ["professional", "side-project"]
+    summary: Home battery optimisation platform for UK households, spanning cloud, hardware and mobile, serving 280+ paying subscribers in production.
+    tags: ["professional"]
     description: |
-      Architected and developed the complete SaaS infrastructure and frontend for a home battery optimization
-      platform. Built a production-ready multi-tenant system that enables customers to optimize their battery
-      storage by integrating with multiple UK energy providers and inverter types.
+      PredBat forecasts household solar generation and demand, reads live half-hourly tariffs, and drives the
+      customer's inverter to charge and discharge at the cheapest possible times. It spans the full stack:
+      custom gateway hardware talking Modbus to the inverter, a multi-tenant Kubernetes cloud, and native
+      mobile apps.
 
-      **My Technical Contributions:**
-      - Multi-tenant Kubernetes deployment on Civo cloud with per-customer namespace isolation
-      - GitOps workflow using Flux and Kustomize for automated deployments
-      - React + TypeScript dashboard with real-time WebSocket data visualization (Recharts)
-      - Supabase integration for authentication and data management
-      - Terraform infrastructure as code for reproducible environments
-      - Paddle payment integration for subscription management
-      - Grafana Alloy for monitoring and observability
-      - Integration with UK energy provider APIs (Octopus Energy, So Energy, EDF, E.ON)
+      **Platform & Infrastructure:**
+      - Multi-tenant Kubernetes on Hetzner with per-customer namespace isolation and automated provisioning
+      - Flux GitOps with Kustomize overlays, templated per-customer manifests, and SOPS/age encrypted secrets
+      - Terraform-managed clusters; progressive multi-wave rollouts for safe feature deployment
+      - Cluster access behind a Cloudflare Zero Trust tunnel, with K3s OIDC gating admin on GitHub org membership
+      - Customer lifecycle automation covering onboarding, pause/resume and deletion
 
-      **Key Achievements:**
-      - Architected and deployed production SaaS infrastructure serving paying customers
-      - Built 8-wave progressive rollout system for safe feature deployment
-      - Delivered 838+ commits across infrastructure and frontend repositories
-      - Implemented per-customer resource isolation and automated provisioning
-      - Created customer lifecycle management automation (onboarding, pause, deletion)
+      **Hardware & Firmware:**
+      - PredBat Gateway, a custom ESP32-S3 USB dongle speaking Modbus RTU directly to the inverter, designed
+        from schematic capture through contract fabrication
+      - Over-the-air firmware update pipeline and Bluetooth LE provisioning for out-of-the-box setup
+      - Static-analysis toolchain that recovers inverter register maps and scaling factors from firmware images,
+        reporting each fact with a confidence score
+
+      **Data & Integrations:**
+      - Device telemetry over MQTT into VictoriaMetrics, with Grafana dashboards, alerting and status pages
+      - UK energy suppliers: Octopus, EDF, E.ON and others, including OAuth and token refresh handling
+      - Inverter and EV charger vendors: GivEnergy, Fox ESS, Solis, SolaX, Sunsynk, Deye, Ohme
+
+      **Product:**
+      - React + TypeScript dashboard with real-time WebSocket telemetry and Recharts visualisation
+      - Supabase authentication and data, Paddle subscription billing, internationalisation
+      - iOS and Android applications via Capacitor, with end-to-end Playwright coverage
 
   - name: Kubernetes Operators Suite
     logo: /images/sections/projects/kubernetes.png
